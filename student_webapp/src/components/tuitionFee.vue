@@ -1,6 +1,5 @@
 <template>
   <div id="personal">
-    <navbar></navbar>
     <van-row>
       <van-col span="22" offset="1">
         <van-row class="van-hairline--bottom" type="flex" justify="space-around">
@@ -41,7 +40,6 @@
 
 <script>
 import Vue from "vue";
-import navbar from "./navbar";
 import { Row, Col, Cell, CellGroup, Image, Icon, Divider } from "vant";
 Vue.use(Row)
   .use(Col)
@@ -52,9 +50,6 @@ Vue.use(Row)
   .use(CellGroup);
 export default {
   name: "personal",
-  components: {
-    navbar
-  },
   data() {
     return {
       feeComp: [

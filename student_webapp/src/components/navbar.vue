@@ -1,5 +1,5 @@
 <template>
-  <van-nav-bar title="标题" left-arrow @click-left="onClickLeft" class="nav" />
+  <van-nav-bar :title="$route.meta.title" left-arrow @click-left="onClickLeft" class="nav" />
 </template>
 
 <script>

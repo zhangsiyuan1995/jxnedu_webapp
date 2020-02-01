@@ -1,6 +1,5 @@
 <template>
   <div id="teacherRank">
-    <navbar id="terRankNav"></navbar>
     <van-row class="trBg" type="flex" justify="space-around">
       <van-col span="23">
         <van-row class="trRb" type="flex" justify="space-around">
@@ -69,7 +68,6 @@
 
 <script>
 import Vue from "vue";
-import navbar from "./navbar";
 import { Row, Col, Cell, CellGroup, Image, Icon, Divider } from "vant";
 Vue.use(Row)
   .use(Col)
@@ -80,9 +78,6 @@ Vue.use(Row)
   .use(CellGroup);
 export default {
   name: "teacherRank",
-  components: {
-    navbar
-  },
   methods: {
     generateClassName(index) {
       return "iconfont" + " " + "icon-" + (index + 1);

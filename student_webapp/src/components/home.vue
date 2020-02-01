@@ -1,8 +1,10 @@
 <template>
   <div id="index">
+
     <van-row>
       <van-col span="24">
         <img class="banner" src="../assets/img/banner.png" alt />
+        <van-button class="scan" icon="scan" plain type="info" />
       </van-col>
     </van-row>
     <van-row>
@@ -52,7 +54,7 @@
         </div>
       </van-col>
       <van-col class="group" span="22" offset="1">
-        <van-cell value is-link to="/myClass">
+        <van-cell value is-link to="/Notice">
           <!-- 使用 title 插槽来自定义标题 -->
           <template slot="title">
             <img class="titImg" src="../assets/img/title2.png" alt />
@@ -60,7 +62,12 @@
           </template>
         </van-cell>
 
-        <van-notice-bar color="#1989fa" text="通知内容通知内容通知内容通知内容通知内容通知内容通知内容" background="#ecf9ff" left-icon="info-o" />
+        <van-notice-bar
+          color="#1989fa"
+          text="通知内容通知内容通知内容通知内容通知内容通知内容通知内容"
+          background="#ecf9ff"
+          left-icon="info-o"
+        />
 
         <div class="groupblock">
           <div>
@@ -137,6 +144,7 @@
 
 <script>
 import Vue from "vue";
+
 import {
   Row,
   Col,
@@ -155,7 +163,10 @@ Vue.use(Row)
   .use(Icon)
   .use(Divider)
   .use(CellGroup);
-export default {};
+export default {
+  name:"home",
+
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -216,5 +227,16 @@ export default {};
 }
 .round h2 {
   margin: 0;
+}
+#index .scan {
+  float: right;
+  position: relative;
+  top: -240px;
+  right: 12px;
+  background-color:rgba(235, 229, 229,0);
+  border: none
+}
+.scan i{
+  font-size: 25px
 }
 </style>

@@ -20,13 +20,13 @@ export default {
         },
         {
           path: "/myClass",
-          icon: "friends-o",
-          name: "我的班级"
+          icon: "label-o",
+          name: "我的课程"
         },
         {
           path: "/partTime",
-          icon: "label-o",
-          name: "助教监督"
+          icon: "todo-list-o",
+          name: "补课申请"
         },
         {
           path: "/personal",
