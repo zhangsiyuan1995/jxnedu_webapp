@@ -13,23 +13,49 @@
             <h4>Mei qi</h4>
             <p>1316228787</p>
           </div>
+          <van-row class="threeB" type="flex" justify="space-around">
+            <van-col>
+              <router-link  to="/studentRank">
+                <van-icon name="medal-o" color="blue" />
+                <p>我的排名</p>
+              </router-link>
+            </van-col>
+            <van-col>
+              <router-link  to="/history">
+              <van-icon name="tosend" color="green" />
+              <p>历史成绩</p>
+              </router-link>
+            </van-col>
+            <van-col>
+              <router-link  to="/gift">
+              <van-icon name="gift-o" color="red" />
+              <p>福利商城</p>
+              </router-link>
+            </van-col>
+          </van-row>
           <div class="blueBlock">
-            <van-cell value="635元" is-link  to="/tuitionFee">
-              <template slot="title">
-                <van-icon class="blueIcon"  name="pending-payment"/>
-                <span class="custom-title">我的课时费</span>
-              </template>
-            </van-cell>
-            <van-cell is-link to="/attStatistics">
+            <van-cell is-link to="/">
               <template slot="title">
                 <van-icon class="blueIcon" name="notes-o" />
-                <span class="custom-title">我的出勤统计</span>
+                <span class="custom-title">出勤统计</span>
               </template>
             </van-cell>
-            <van-cell value="第六名" is-link to="/teacherRank">
+            <van-cell is-link to="/">
               <template slot="title">
                 <van-icon class="blueIcon" name="chart-trending-o" />
-                <span class="custom-title">我的排名</span>
+                <span class="custom-title">我的作业</span>
+              </template>
+            </van-cell>
+            <van-cell value="2" is-link to="/">
+              <template slot="title">
+                <van-icon class="blueIcon" name="pending-payment" />
+                <span class="custom-title">我的评价</span>
+              </template>
+            </van-cell>
+            <van-cell is-link to="/">
+              <template slot="title">
+                <van-icon class="blueIcon" name="pending-payment" />
+                <span class="custom-title">请假申请</span>
               </template>
             </van-cell>
           </div>
@@ -58,7 +84,7 @@ Vue.use(Row)
   .use(Divider)
   .use(CellGroup);
 export default {
-  name: "personal",
+  name: "personal"
 };
 </script>
 
@@ -82,7 +108,8 @@ export default {
 .blueBlock .blueIcon {
   font-size: 19px;
   color: rgb(0, 38, 255);
-  vertical-align: top;
+  vertical-align: middle;
+  padding-bottom: 3px;
   margin-right: 10px;
 }
 .blueBlock {
@@ -97,33 +124,54 @@ export default {
 .yellowBlock {
   margin-top: 10px;
 }
-.perNa,.blueBlock,.yellowBlock{
+.perNa,
+.blueBlock,
+.yellowBlock {
   border: 1px solid white;
   border-radius: 5px;
   box-shadow: 1px 1px 1px 1px #e4e3e3;
 }
-.perCho{
+.perCho {
   position: relative;
-  top: -180px
+  top: -180px;
 }
-.perHead{
+.perHead {
   position: relative;
   z-index: 10;
 }
-.perBlock{
+.perBlock {
   position: relative;
-  top: -140px
+  top: -140px;
 }
-.perNa h4{
+.perNa h4 {
   color: #333;
   font-size: 18px;
   margin-bottom: 7px;
   font-family: "黑体";
-  font-weight: 200
+  font-weight: 200;
 }
-.perNa p{
+.perNa p {
   color: #666;
- font-family: "黑体";
- font-size: 15px;
+  font-family: "黑体";
+  font-size: 15px;
+}
+.threeB {
+  background-color: white;
+  text-align: center;
+  margin-top: 12px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #e4e3e3;
+  padding: 10px 0;
+}
+.threeB .van-icon {
+  font-size: 25px;
+  vertical-align: middle;
+}
+.threeB .van-button {
+  border: none;
+}
+.threeB p {
+  color: #666;
+  margin-bottom: 0
 }
 </style>

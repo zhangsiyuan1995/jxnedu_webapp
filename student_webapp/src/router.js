@@ -8,7 +8,7 @@ import personal from "./components/personal.vue";
 import studentList from "./components/studentList.vue";
 import studentDetails from "./components/studentDetails.vue";
 import tuitionFee from "./components/tuitionFee.vue";
-import teacherRank from "./components/teacherRank.vue";
+import studentRank from "./components/studentRank.vue";
 import attStatistics from "./components/attStatistics.vue";
 import personalInfo from "./components/personalInfo.vue";
 
@@ -64,10 +64,10 @@ export default new VueRouter({
             }
         },
         {
-            path: "/teacherRank",
-            component: teacherRank,
+            path: "/studentRank",
+            component: studentRank,
             meta: {
-                title: "教师排名",
+                title: "学生排名",
                 keepAlive:true
             }
         },

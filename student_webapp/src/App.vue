@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <navbar v-if="$route.meta.keepAlive"></navbar>
+    <van-sticky>
+      <navbar v-if="$route.meta.keepAlive"></navbar>
+    </van-sticky>
     <router-view></router-view>
     <tabbar></tabbar>
   </div>

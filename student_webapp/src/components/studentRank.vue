@@ -1,5 +1,5 @@
 <template>
-  <div id="teacherRank">
+  <div id="studentRank">
     <van-row class="trBg" type="flex" justify="space-around">
       <van-col span="23">
         <van-row class="trRb" type="flex" justify="space-around">
@@ -51,7 +51,7 @@
           <van-col span="5">
             <p>课时量</p>
           </van-col>
-          <van-row class="gardLine" v-for="(item,index) in teacherRank" :key="index">
+          <van-row class="gardLine" v-for="(item,index) in studentRank" :key="index">
             <van-col span="2" class="blackRank">
               <van-icon :class="generateClassName(index)"></van-icon>
             </van-col>
@@ -77,7 +77,7 @@ Vue.use(Row)
   .use(Divider)
   .use(CellGroup);
 export default {
-  name: "teacherRank",
+  name: "studentRank",
   methods: {
     generateClassName(index) {
       return "iconfont" + " " + "icon-" + (index + 1);
@@ -85,7 +85,7 @@ export default {
   },
   data() {
     return {
-      teacherRank: [
+      studentRank: [
         {
           teaName: "张思远",
           grade: "98",

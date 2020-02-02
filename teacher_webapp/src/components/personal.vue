@@ -87,7 +87,8 @@ export default {
 .blueBlock .blueIcon {
   font-size: 19px;
   color: rgb(0, 38, 255);
-  vertical-align: top;
+  vertical-align: middle;
+  padding-bottom: 3px;
   margin-right: 10px;
 }
 .blueBlock {
