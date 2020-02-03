@@ -2,8 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 
 import home from "./components/home.vue";
-import myClass from "./components/myClass.vue";
-import partTime from "./components/partTime.vue";
+import myCourses from "./components/myCourses.vue";
+import makeUpApplication from "./components/makeUpApplication.vue";
 import personal from "./components/personal.vue";
 import studentList from "./components/studentList.vue";
 import studentDetails from "./components/studentDetails.vue";
@@ -13,6 +13,7 @@ import attStatistics from "./components/attStatistics.vue";
 import personalInfo from "./components/personalInfo.vue";
 
 import notice from "./components/notice.vue";
+import gift from "./components/gift.vue";
 Vue.use(VueRouter);
 
 export default new VueRouter({
@@ -24,11 +25,11 @@ export default new VueRouter({
             }
         },
         {
-            path: "/myClass",
-            component: myClass,
+            path: "/myCourses",
+            component: myCourses,
             meta: {
-                title: "我的班级",
-                keepAlive:true
+                title: "我的课程",
+                keepAlive:false
             }
         },
         {
@@ -44,14 +45,14 @@ export default new VueRouter({
             component: attStatistics,
             meta: {
                 title: "出勤统计",
-                keepAlive:true
+                keepAlive:true  
             }
         },
         {
-            path: "/partTime",
-            component: partTime,
+            path: "/makeUpApplication",
+            component: makeUpApplication,
             meta: {
-                title: "助教监督",
+                title: "补课申请",
                 keepAlive:true
             }
         },
@@ -106,6 +107,15 @@ export default new VueRouter({
             component: notice,
             meta: {
                 title: "通知",
+                keepAlive:true
+            }
+        },
+        
+        {
+            path: "/gift",
+            component: gift,
+            meta: {
+                title: "福利商城",
                 keepAlive:true
             }
         },

@@ -5,7 +5,7 @@
     </van-cell>
     <van-cell title="姓名" value="梁苏萌" />
     <van-cell title="性别" value="女" />
-    <van-cell title="毕业院校" value="河北师范大学" />
+    <van-cell title="所在院校" value="河北师范大学" />
 
     <van-cell title="学历" value="本科" :style="{margin:'5px 0 0 0'}" />
     <van-cell title="教师级别" value="三级" />

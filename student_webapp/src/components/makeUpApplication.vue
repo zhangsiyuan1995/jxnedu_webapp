@@ -1,11 +1,20 @@
 <template>
   <div id="partTime">
-    <van-cell class="ptCell" title="上课日期" :value="classT" @click="showPopup0" />
+    <van-cell class="ptCell" title="剩余补课次数" value="2" />
+    <van-cell class="ptCell" title="补课日期" :value="classT" @click="showPopup0" />
     <van-cell class="ptCell" title="班级名称" :value="classN" @click="showPopup2" />
-    <van-cell class="ptCell" title="助教姓名" :value="ptN" @click="showPopup3" />
-    <van-field class="ptCell" v-model="value" label="评分" placeholder="满分10" input-align="right" type="digit"/>
-    <van-field class="ptCell" v-model="message" rows="1" height="100px" label="评价内容" type="textarea" />
-    <van-button  color="#7232dd" size="large">提交</van-button>
+    <!-- <van-cell class="ptCell" title="助教姓名" :value="ptN" @click="showPopup3" /> -->
+    <!-- <van-field class="ptCell" v-model="value" label="评分" placeholder="满分10" input-align="right" type="digit"/> -->
+    <van-field
+      class="ptCell"
+      v-model="message"
+      rows="1"
+      height="100px"
+      label="补课原因"
+      type="textarea"
+    />
+
+    <van-button color="#7232dd" size="large">提交</van-button>
     <!-- 日期弹窗 -->
     <van-popup v-model="show0" position="bottom" :style="{ height: '35%'}" round>
       <van-datetime-picker
@@ -43,7 +52,7 @@
 import Vue from "vue";
 import {
   Picker,
-  Button ,
+  Button,
   Cell,
   CellGroup,
   Field,
@@ -51,7 +60,7 @@ import {
   Popup
 } from "vant";
 Vue.use(Picker)
-  .use(Button )
+  .use(Button)
   .use(Cell)
   .use(Field)
   .use(DatetimePicker)
@@ -119,7 +128,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-.ptCell{
+.ptCell {
   margin-bottom: 5px;
 }
 </style>

@@ -19,12 +19,12 @@ export default {
           name: "首页"
         },
         {
-          path: "/myClass",
+          path: "/myCourses",
           icon: "label-o",
           name: "我的课程"
         },
         {
-          path: "/partTime",
+          path: "/makeUpApplication",
           icon: "todo-list-o",
           name: "补课申请"
         },
