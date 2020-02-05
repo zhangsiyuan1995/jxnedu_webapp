@@ -14,6 +14,9 @@ import personalInfo from "./components/personalInfo.vue";
 
 import notice from "./components/notice.vue";
 import gift from "./components/gift.vue";
+import giftPoint from "./components/giftPoint.vue";
+import giftHistory from "./components/giftHistory.vue";
+import giftRules from "./components/giftRules.vue";
 Vue.use(VueRouter);
 
 export default new VueRouter({
@@ -116,6 +119,30 @@ export default new VueRouter({
             component: gift,
             meta: {
                 title: "福利商城",
+                keepAlive:true
+            }
+        },
+        {
+            path: "/giftPoint",
+            component: giftPoint,
+            meta: {
+                title: "我的积分",
+                keepAlive:true
+            }
+        },
+        {
+            path: "/giftHistory",
+            component: giftHistory,
+            meta: {
+                title: "兑换记录",
+                keepAlive:true
+            }
+        },
+        {
+            path: "/giftRules",
+            component: giftRules,
+            meta: {
+                title: "积分规则",
                 keepAlive:true
             }
         },

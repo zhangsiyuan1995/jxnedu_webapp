@@ -1,29 +1,7 @@
 <template>
-  <div id="gift">
+  <div id="giftHistory">
     <van-row type="flex" justify="center" style="background:white;  margin-bottom: 60px">
       <van-col span="22">
-        <img class="banner" src="../assets/img/bannerGift.png" alt />
-        <van-row class="threeGift" type="flex" justify="space-around">
-          <van-col>
-            <router-link to="/giftPoint">
-              <img src="../assets/img/myPoint.png" alt="">
-              <p>积分:{{point}}</p>
-            </router-link>
-          </van-col>
-          <van-col>
-            <router-link to="/gifthistory">
-             <img src="../assets/img/giftHistory.png" alt="">
-              <p>兑换记录</p>
-            </router-link>
-          </van-col>
-          <van-col>
-            <router-link to="/giftRules">
-              <img src="../assets/img/giftRules.png" alt="">
-              <p>积分规则</p>
-            </router-link>
-          </van-col>
-        </van-row>
-        <h2>兑换礼品</h2>
         <van-row class="giftBlock" v-for="(item,index) in giftList" :key="index">
           <van-col span="10">
             <img :src="item.giftImg" alt />
@@ -32,11 +10,10 @@
             <div class="giftBlock2">
               <h3>{{item.giftName}}</h3>
               <p class="redRound">限量{{item.giftSum}}份</p>
-              <p class="giftNum">{{item.giftNum}}已领</p>
+              <p class="giftNum">{{item.giftLoc}}</p>
               <div>
                 <h1 class="giftPoint">{{item.giftPoint}}</h1>
                 <h2 class="giftPoint">积分</h2>
-                <van-button round type="danger" size="small">立即兑换</van-button>
               </div>
             </div>
           </van-col>
@@ -66,56 +43,23 @@ Vue.use(Picker)
   .use(Popup)
   .use(CellGroup);
 export default {
-  name: "gift",
+  name: "giftHistory",
   data() {
     return {
-      point:"2000",
       giftList: [
         {
           giftImg: require("../assets/img/gift.png"),
           giftName:"礼物名称",
-          giftSum:"500",
-          giftNum:"222",
+          giftLoc:"2012-11-2在邢台校区已领",
+          giftSum:"222",
           giftPoint:"666",
           giftId:"123"
         },
-             {
+           {
           giftImg: require("../assets/img/gift.png"),
           giftName:"礼物名称",
-          giftSum:"500",
-          giftNum:"222",
-          giftPoint:"666",
-          giftId:"123"
-        },
-             {
-          giftImg: require("../assets/img/gift.png"),
-          giftName:"礼物名称",
-          giftSum:"500",
-          giftNum:"222",
-          giftPoint:"666",
-          giftId:"123"
-        },
-             {
-          giftImg: require("../assets/img/gift.png"),
-          giftName:"礼物名称",
-          giftSum:"500",
-          giftNum:"222",
-          giftPoint:"666",
-          giftId:"123"
-        },
-             {
-          giftImg: require("../assets/img/gift.png"),
-          giftName:"礼物名称",
-          giftSum:"500",
-          giftNum:"222",
-          giftPoint:"666",
-          giftId:"123"
-        },
-             {
-          giftImg: require("../assets/img/gift.png"),
-          giftName:"礼物名称",
-          giftSum:"500",
-          giftNum:"222",
+          giftLoc:"2012-11-2在邢台校区已领",
+          giftSum:"222",
           giftPoint:"666",
           giftId:"123"
         },
