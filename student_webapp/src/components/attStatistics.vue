@@ -10,7 +10,7 @@
     <van-cell title="平均课时" value="8.4小时" />
     <van-cell title="出勤天数" value="10天" />
     <van-collapse v-model="activeName" accordion>
-      <van-collapse-item title="出勤班次" name="1">
+      <van-collapse-item title="出勤日期" name="1">
         <van-cell
           v-for="(item,index) in attDate"
           :key="index"

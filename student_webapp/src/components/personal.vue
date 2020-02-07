@@ -34,7 +34,7 @@
             </van-col>
           </van-row>
           <div class="blueBlock">
-            <van-cell is-link to="/">
+            <van-cell is-link to="/attStatistics">
               <template slot="title">
                 <van-icon class="blueIcon" name="notes-o" />
                 <span class="custom-title">出勤统计</span>
@@ -42,19 +42,19 @@
             </van-cell>
             <van-cell is-link to="/">
               <template slot="title">
-                <van-icon class="blueIcon" name="chart-trending-o" />
+                <van-icon class="blueIcon" name="orders-o" />
                 <span class="custom-title">我的作业</span>
               </template>
             </van-cell>
             <van-cell value="2" is-link to="/">
               <template slot="title">
-                <van-icon class="blueIcon" name="pending-payment" />
+                <van-icon class="blueIcon" name="records" />
                 <span class="custom-title">我的评价</span>
               </template>
             </van-cell>
             <van-cell is-link to="/">
               <template slot="title">
-                <van-icon class="blueIcon" name="pending-payment" />
+                <van-icon class="blueIcon" name="calender-o" />
                 <span class="custom-title">请假申请</span>
               </template>
             </van-cell>

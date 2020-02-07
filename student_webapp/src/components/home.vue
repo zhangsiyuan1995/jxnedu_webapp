@@ -97,7 +97,7 @@
         </div>
       </van-col>
       <van-col class="group" span="22" offset="1">
-        <van-cell value is-link>
+        <van-cell value is-link to="/attStatistics">
           <template slot="title">
             <img class="titImg" src="../assets/img/title3.png" alt />
             <span class="custom-title">出勤统计</span>
