@@ -46,13 +46,13 @@
                 <span class="custom-title">我的作业</span>
               </template>
             </van-cell>
-            <van-cell value="2" is-link to="/">
+            <van-cell value="2" is-link to="/evaluationList">
               <template slot="title">
                 <van-icon class="blueIcon" name="records" />
                 <span class="custom-title">我的评价</span>
               </template>
             </van-cell>
-            <van-cell is-link to="/">
+            <van-cell is-link to="/makeLeave">
               <template slot="title">
                 <van-icon class="blueIcon" name="calender-o" />
                 <span class="custom-title">请假申请</span>

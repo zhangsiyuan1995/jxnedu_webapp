@@ -9,7 +9,7 @@
     </van-row>
     <van-row>
       <van-col class="group" span="22" offset="1">
-        <van-cell value is-link>
+        <van-cell value is-link to="/myCourses">
           <!-- 使用 title 插槽来自定义标题 -->
           <template slot="title">
             <img class="titImg" src="../assets/img/title1.png" alt />

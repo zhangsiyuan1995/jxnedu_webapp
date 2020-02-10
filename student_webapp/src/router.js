@@ -17,6 +17,8 @@ import gift from "./components/gift.vue";
 import giftPoint from "./components/giftPoint.vue";
 import giftHistory from "./components/giftHistory.vue";
 import giftRules from "./components/giftRules.vue";
+import makeLeave from "./components/makeLeave.vue";
+import evaluationList from "./components/evaluationList.vue";
 Vue.use(VueRouter);
 
 export default new VueRouter({
@@ -143,6 +145,23 @@ export default new VueRouter({
             component: giftRules,
             meta: {
                 title: "积分规则",
+                keepAlive:true
+            }
+        },
+        {
+            path: "/makeLeave",
+            component: makeLeave,
+            meta: {
+                title: "请假",
+                keepAlive:true
+            }
+        },
+        
+        {
+            path: "/evaluationList",
+            component: evaluationList,
+            meta: {
+                title: "我的评价",
                 keepAlive:true
             }
         },
