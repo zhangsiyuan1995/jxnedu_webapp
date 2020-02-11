@@ -38,7 +38,7 @@ export default {
         {
           title: "标题标题",
           label: "摘要摘要",
-          link: "#"
+          link: "noticeContent"
         },
         {
           title: "标题标题",

@@ -4,7 +4,7 @@
 
     <van-row type="flex" justify="center">
       <van-col class="elcontent" span="22">
-        <van-row>
+        <van-row class="elcontents">
           <van-col span="24">
             <img src="../assets/img/pHead.png" alt />
             <div>
@@ -19,9 +19,10 @@
             <div class="evaName">
               <h4>受评教师：{{item.name}} {{item.date}}</h4>
             </div>
-            <van-divider :style="{margin:'0',width:'100%'}"/>
+            <van-divider :style="{margin:'0',width:'100%'}" />
           </van-col>
         </van-row>
+        <van-button type="info" size="large" to="/evaluationCommit" style="margin-top:30px">去评价</van-button>
       </van-col>
     </van-row>
   </div>
@@ -29,10 +30,10 @@
 
 <script>
 import Vue from "vue";
-import { Row, Col, Cell, CellGroup, Image, Icon, Divider, Rate } from "vant";
+import { Row, Col, Button, CellGroup, Image, Icon, Divider, Rate } from "vant";
 Vue.use(Row)
   .use(Col)
-  .use(Cell)
+  .use(Button)
   .use(Image)
   .use(Icon)
   .use(Divider)
@@ -82,12 +83,14 @@ export default {
   width: 100%;
 }
 .elcontent {
+  position: relative;
+  top: -100px;
+}
+.elcontents {
   background-color: white;
   padding: 15px;
   border-radius: 10px;
   box-shadow: rgb(212, 212, 212) 0px 0px 8px;
-  position: relative;
-  top: -100px
 }
 .elcontent img,
 .elcontent div {

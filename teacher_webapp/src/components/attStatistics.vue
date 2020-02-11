@@ -1,6 +1,5 @@
 <template>
   <div id="attStatistics">
-    <navbar></navbar>
     <div class="asBlock">
       <van-image :src="headImg" />
       <div>
@@ -32,7 +31,6 @@
 </template>
 <script>
 import Vue from "vue";
-import navbar from "./navbar";
 import {
   Picker,
   Button,
@@ -53,9 +51,6 @@ Vue.use(Picker)
   .use(CellGroup);
 export default {
   name: "attStatistics",
-  components: {
-    navbar
-  },
   data() {
     return {
       headImg: require("../assets/img/head.png"),

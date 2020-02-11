@@ -1,6 +1,5 @@
 <template>
   <div id="partTime">
-    <navbar></navbar>
     <van-cell class="ptCell" title="上课日期" :value="classT" @click="showPopup0" />
     <van-cell class="ptCell" title="班级名称" :value="classN" @click="showPopup2" />
     <van-cell class="ptCell" title="助教姓名" :value="ptN" @click="showPopup3" />
@@ -42,7 +41,6 @@
 
 <script>
 import Vue from "vue";
-import navbar from "./navbar";
 import {
   Picker,
   Button ,
@@ -61,9 +59,6 @@ Vue.use(Picker)
   .use(CellGroup);
 export default {
   name: "partTime",
-  components: {
-    navbar
-  },
   data() {
     return {
       value: "",

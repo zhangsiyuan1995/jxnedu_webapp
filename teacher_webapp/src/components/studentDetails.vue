@@ -1,6 +1,5 @@
 <template>
   <div id="studentDetails">
-    <navbar id="stuDetailsNav" color="white"></navbar>
     <div class="stuDetailHead">
       <h1>王雅倩</h1>
       <div>
@@ -37,7 +36,6 @@
 
 <script>
 import Vue from "vue";
-import navbar from "./navbar";
 import { Row, Col, Cell, CellGroup, Image, Icon, Tab, Tabs } from "vant";
 Vue.use(Row)
   .use(Col)
@@ -49,9 +47,6 @@ Vue.use(Row)
   .use(CellGroup);
 export default {
   name: "studentDetails",
-  components: {
-    navbar
-  },
   data() {
     return {
       active: 0,

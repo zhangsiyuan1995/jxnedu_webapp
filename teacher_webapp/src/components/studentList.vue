@@ -1,6 +1,5 @@
 <template>
   <div id="studentList">
-    <navbar></navbar>
     <van-search v-model="value" placeholder="请输入搜索姓名" shape="round" @search="onSearch"></van-search>
     <van-list v-model="loading" :finished="finished" finished-text="没有更多了" @load="onLoad">
       <van-cell is-link v-for="(item,index) in list" :key="index" :to="item.link">
@@ -23,7 +22,6 @@
 
 <script>
 import Vue from "vue";
-import navbar from "./navbar";
 import { Row, Col, Cell, CellGroup, Image, Icon, Search, List } from "vant";
 Vue.use(Row)
   .use(Col)
@@ -35,9 +33,6 @@ Vue.use(Row)
   .use(CellGroup);
 export default {
   name: "studentList",
-  components: {
-    navbar
-  },
   data() {
     return {
       list: [

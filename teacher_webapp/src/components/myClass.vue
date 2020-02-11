@@ -1,6 +1,5 @@
 <template>
   <div id="myClass">
-    <navbar></navbar>
     <van-row>
       <van-col span="22" offset="1">
         <div class="groupClass">
@@ -52,7 +51,6 @@
 
 <script>
 import Vue from "vue";
-import navbar from "./navbar";
 import { Row, Col, Cell, CellGroup, Image, Icon, Divider } from "vant";
 Vue.use(Row)
   .use(Col)
@@ -63,9 +61,6 @@ Vue.use(Row)
   .use(CellGroup);
 export default {
   name: "myClass",
-  components: {
-    navbar
-  }
 };
 </script>
 

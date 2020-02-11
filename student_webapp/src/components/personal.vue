@@ -21,7 +21,7 @@
               </router-link>
             </van-col>
             <van-col>
-              <router-link  to="/history">
+              <router-link  to="/grade">
               <van-icon name="tosend" color="green" />
               <p>历史成绩</p>
               </router-link>

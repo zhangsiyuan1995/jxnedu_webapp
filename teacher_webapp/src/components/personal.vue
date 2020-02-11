@@ -1,6 +1,5 @@
 <template>
   <div id="personal">
-    <navbar></navbar>
     <van-row>
       <van-col span="24">
         <img class="perBg" src="../assets/img/bg3.png" alt />
@@ -50,7 +49,6 @@
 
 <script>
 import Vue from "vue";
-import navbar from "./navbar";
 import { Row, Col, Cell, CellGroup, Image, Icon, Divider } from "vant";
 Vue.use(Row)
   .use(Col)
@@ -61,9 +59,6 @@ Vue.use(Row)
   .use(CellGroup);
 export default {
   name: "personal",
-  components: {
-    navbar
-  }
 };
 </script>
 

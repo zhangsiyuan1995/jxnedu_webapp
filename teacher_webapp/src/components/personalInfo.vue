@@ -1,6 +1,5 @@
 <template>
   <div id="personalInfo">
-    <navbar></navbar>
     <van-cell class="perInfoHead" title="头像" :style="{margin:'5px 0 0 0'}">
       <van-image slot="right-icon" :src="headImg" style="line-height: inherit;" />
     </van-cell>
@@ -24,7 +23,6 @@
 </template>
 <script>
 import Vue from "vue";
-import navbar from "./navbar";
 import {
   Picker,
   Button,
@@ -45,9 +43,6 @@ Vue.use(Picker)
   .use(CellGroup);
 export default {
   name: "personalInfo",
-  components: {
-    navbar
-  },
   data() {
     return {
       headImg: require("../assets/img/head.png")

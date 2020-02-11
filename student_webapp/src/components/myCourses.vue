@@ -143,7 +143,8 @@ import {
   Swipe,
   SwipeItem,
   Icon,
-  Divider
+  Divider,
+   Tab, Tabs 
 } from "vant";
 Vue.use(Row)
   .use(Col)
@@ -152,6 +153,8 @@ Vue.use(Row)
   .use(SwipeItem)
   .use(Icon)
   .use(Divider)
+  .use(Tab)
+  .use(Tabs)
   .use(CellGroup);
 export default {
   name: "myCourses",
