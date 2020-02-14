@@ -8,6 +8,10 @@ import personalInfo from "./components/personalInfo.vue";
 import evaluationList from "./components/evaluationList.vue";
 import evaluationCommit from "./components/evaluationCommit.vue";
 import myMission from "./components/myMission.vue";
+import report from "./components/report.vue";
+import teacherSupervision from "./components/teacherSupervision.vue";
+import studentManager from "./components/studentManager.vue";
+
 Vue.use(VueRouter);
 
 export default new VueRouter({
@@ -71,6 +75,31 @@ export default new VueRouter({
                 keepAlive: false
             }
         },
+        {
+            path: "/report",
+            component: report,
+            meta: {
+                title: "任务汇报",
+                keepAlive: true
+            }
+        },
+        {
+            path: "/teacherSupervision",
+            component: teacherSupervision,
+            meta: {
+                title: "教师监督",
+                keepAlive: true
+            }
+        },
+        {
+            path: "/studentManager",
+            component: studentManager,
+            meta: {
+                title: "学生管理",
+                keepAlive: false
+            }
+        },
+        
     ],
     mode: 'history'
 })

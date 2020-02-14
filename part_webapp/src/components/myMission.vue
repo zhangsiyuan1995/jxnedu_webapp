@@ -13,7 +13,7 @@
               <p>{{item.date}}</p>
             </div>
             <template v-if="value1">
-              <van-button type="info" size="mini">汇报</van-button>
+              <van-button type="info" size="mini" to="/report">汇报</van-button>
             </template>
             <h4>任务内容：</h4>
             <p>{{item.content}}</p>
@@ -55,7 +55,7 @@
               <p>{{item.date}}</p>
             </div>
             <template v-if="value2">
-              <van-button type="info" size="mini">评价</van-button>
+              <van-button type="info" size="mini" to="/teacherSupervision">评价</van-button>
             </template>
             <template v-if="!value2">
               <van-button type="info" size="mini">详情</van-button>
