@@ -58,7 +58,7 @@
               <van-button type="info" size="mini" to="/teacherSupervision">评价</van-button>
             </template>
             <template v-if="!value2">
-              <van-button type="info" size="mini">详情</van-button>
+              <van-button type="info" size="mini" to="/evaluationDetails">详情</van-button>
             </template>
             <h4>综合评价内容</h4>
             <p>{{item.content}}</p>

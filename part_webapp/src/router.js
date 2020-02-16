@@ -11,7 +11,9 @@ import myMission from "./components/myMission.vue";
 import report from "./components/report.vue";
 import teacherSupervision from "./components/teacherSupervision.vue";
 import studentManager from "./components/studentManager.vue";
-
+import evaluationDetails from "./components/evaluationDetails.vue";
+import qrCode from "./components/qrCode.vue";
+import scoreEntry from "./components/scoreEntry.vue";
 Vue.use(VueRouter);
 
 export default new VueRouter({
@@ -99,7 +101,31 @@ export default new VueRouter({
                 keepAlive: false
             }
         },
-        
+        {
+            path: "/evaluationDetails",
+            component: evaluationDetails,
+            meta: {
+                title: "评价详情",
+                keepAlive: true
+            }
+        },
+        {
+            path: "/qrCode",
+            component: qrCode,
+            meta: {
+                title: "二维码",
+                keepAlive: true,
+                id:"qrCodeNav"
+            }
+        },
+        {
+            path: "/scoreEntry",
+            component: scoreEntry,
+            meta: {
+                title: "成绩录入",
+                keepAlive: true,
+            }
+        },
     ],
     mode: 'history'
 })
