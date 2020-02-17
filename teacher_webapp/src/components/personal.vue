@@ -59,6 +59,14 @@ Vue.use(Row)
   .use(CellGroup);
 export default {
   name: "personal",
+  data(){
+    return{
+      name:"王雅倩",
+      phone:"13710111111",
+      classFee:"355",
+      runk:"6"
+    }
+  }
 };
 </script>
 

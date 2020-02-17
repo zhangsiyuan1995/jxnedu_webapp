@@ -129,21 +129,12 @@
         </van-row>
       </van-col>
     </van-row>
-
   </div>
 </template>
 
 <script>
 import Vue from "vue";
-import {
-  Row,
-  Col,
-  Cell,
-  CellGroup,
-  Image,
-  Icon,
-  Divider
-} from "vant";
+import { Row, Col, Cell, CellGroup, Image, Icon, Divider } from "vant";
 Vue.use(Row)
   .use(Col)
   .use(Cell)
@@ -151,17 +142,35 @@ Vue.use(Row)
   .use(Icon)
   .use(Divider)
   .use(CellGroup);
-export default {};
+export default {
+  data() {
+    return {
+      classPlan: {
+        date: "2020-1-7 8:30",
+        position: "河北城乡建设学校",
+        class: "20秋季点睛班",
+        content: "上课内容"
+      },
+      myClass: ["2020寒假点睛班", "2020寒假点睛班", "2020寒假点睛班"],
+      attendance: {
+        should: "50",
+        actual: "50",
+        rest: "50",
+        avg: "50"
+      }
+    };
+  }
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-#index{
-  margin-bottom: 30px
+#index {
+  margin-bottom: 30px;
 }
 .banner {
   width: 100%;
-  margin: 0
+  margin: 0;
 }
 .groupblock {
   background-color: white;
@@ -194,7 +203,7 @@ export default {};
 .titImg {
   width: 22px;
   margin-right: 5px;
-  vertical-align: top
+  vertical-align: top;
 }
 .round {
   width: 70px;

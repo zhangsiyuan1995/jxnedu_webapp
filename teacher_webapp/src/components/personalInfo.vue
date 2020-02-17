@@ -11,7 +11,7 @@
     <van-cell title="教师级别" value="三级" />
     <van-cell title="工作年限" value="8" />
     <van-cell title="课时费" value="678元" />
-    
+
     <van-button
       type="primary"
       size="large"
@@ -45,7 +45,16 @@ export default {
   name: "personalInfo",
   data() {
     return {
-      headImg: require("../assets/img/head.png")
+      headImg: require("../assets/img/head.png"),
+      personalInfo: {
+        name: "梁苏萌",
+        sex: "女",
+        school: "河北师大",
+        education: "本科",
+        level: "三级",
+        years: "8",
+        classFee: "687"
+      }
     };
   }
 };

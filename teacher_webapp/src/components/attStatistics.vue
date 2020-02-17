@@ -54,6 +54,8 @@ export default {
   data() {
     return {
       headImg: require("../assets/img/head.png"),
+      avgClassTime:"",
+      attDays:"",
       activeName: "",
       attDate: [
         {

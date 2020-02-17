@@ -51,6 +51,9 @@ export default {
     return {
       active: 0,
       value: "",
+      name:"王雅倩",
+      sex:"男",
+      phone:"13800000000",
       basic: [
         {
           p: "所在院校",

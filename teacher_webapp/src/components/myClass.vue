@@ -61,6 +61,23 @@ Vue.use(Row)
   .use(CellGroup);
 export default {
   name: "myClass",
+  data(){
+    return{
+      classList:[
+        {
+          className:"20寒假医学影像专业基础强化班",
+          studentNum:"28",
+          attendance:"50%",
+          gard:"89%",
+          eval:"8.7",
+          participate:"68%",
+          classNum:"20",
+          remainingclassNum:"20",
+          makeUp:"8"
+        }
+      ]
+    }
+  }
 };
 </script>
 

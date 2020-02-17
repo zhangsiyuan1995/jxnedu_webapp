@@ -85,6 +85,10 @@ export default {
   },
   data() {
     return {
+      rank:[
+        "张思远","张思远","张思远"
+      ],//前三
+      rankNum:6,//本人排名
       teacherRank: [
         {
           teaName: "张思远",

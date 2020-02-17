@@ -13,7 +13,7 @@
           </van-col>
           <van-col span="11">
             <div class="feeRed">
-              <p>课时费收入(元)</p>
+              <p>扣款(元)</p>
               <img src="../assets/img/chart.png" alt />
               <h2>+598</h2>
               <p>本月费用</p>
@@ -23,13 +23,16 @@
         <h3>本月课时费共28项组成</h3>
         <div class="feeComp">
           <h2>课时费组成</h2>
-          <van-cell v-for="(item,index) in feeComp" :key="index"  :value="item.money" >
+          <van-cell v-for="(item,index) in feeComp" :key="index" :value="item.money">
             <template slot="title">
               <span class="custom-title">{{item.classN}}</span>
             </template>
             <template slot="label">{{item.time}}</template>
-            <template slot="icon">
-              <van-image :src="item.img"></van-image>
+            <template slot="icon" v-if="item.money>0">
+              <van-image :src="imgIn"></van-image>
+            </template>
+            <template slot="icon" v-if="item.money<0">
+              <van-image :src="imgOut"></van-image>
             </template>
           </van-cell>
         </div>
@@ -52,30 +55,30 @@ export default {
   name: "personal",
   data() {
     return {
+      imgOut: require("../assets/img/feeOut.png"),
+      imgIn: require("../assets/img/feeIn.png"),
+      income: "",
+      deduction: "",
       feeComp: [
         {
-          img: require("../assets/img/feeOut.png"),
           classN: "19寒假点睛班",
           time: "2020-01-12",
-          money: "+18"
+          money: -18
         },
         {
-          img: require("../assets/img/feeIn.png"),
           classN: "19寒假点睛班",
           time: "2020-01-12",
-          money: "+18"
+          money: 18
         },
         {
-          img: require("../assets/img/feeOut.png"),
           classN: "19寒假点睛班",
           time: "2020-01-12",
-          money: "+18"
+          money: 18
         },
         {
-          img: require("../assets/img/feeIn.png"),
           classN: "19寒假点睛班",
           time: "2020-01-12",
-          money: "+18"
+          money: -18
         }
       ]
     };
@@ -148,14 +151,14 @@ export default {
   font-size: 18px;
   margin-top: 10px;
 }
-.feeComp img{
-    width: 40px;
-    height: 40px;
-    vertical-align: top;
-    margin-right: 5px
+.feeComp img {
+  width: 40px;
+  height: 40px;
+  vertical-align: top;
+  margin-right: 5px;
 }
-.feeComp h2{
-    margin-left: 15px;
-    font-weight: 350
-    }
+.feeComp h2 {
+  margin-left: 15px;
+  font-weight: 350;
+}
 </style>
