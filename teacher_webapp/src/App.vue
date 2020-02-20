@@ -4,7 +4,7 @@
       <navbar v-if="$route.meta.keepAlive"></navbar>
     </van-sticky>
     <router-view></router-view>
-    <tabbar></tabbar>
+    <tabbar v-if="$route.meta.tabbarAlive"></tabbar>
   </div>
 </template>
 

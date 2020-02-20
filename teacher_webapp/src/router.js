@@ -11,6 +11,7 @@ import tuitionFee from "./components/tuitionFee.vue";
 import teacherRank from "./components/teacherRank.vue";
 import attStatistics from "./components/attStatistics.vue";
 import personalInfo from "./components/personalInfo.vue";
+import login from "./components/login.vue";
 
 Vue.use(VueRouter);
 
@@ -96,9 +97,33 @@ export default new VueRouter({
             }
         },
         {
+            path: "/login",
+            component: login,
+            meta: {
+                title: "登录",
+                keepAlive:false,
+                tabbarAlive:false
+            }
+        },
+        {
             path: '/',
             redirect: '/home'
         }
     ],
     mode: 'history'
 })
+
+// router.beforeEach((to, from, next) => {
+//     if (to.path === '/login') {
+//       next();
+//     } else {
+//       let token = localStorage.getItem('Authorization');
+   
+//       if (token === 'null' || token === '') {
+//         next('/login');
+//       } else {
+//         next();
+//       }
+//     }
+//   });
+//   export default router;

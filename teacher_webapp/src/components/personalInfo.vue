@@ -18,6 +18,7 @@
       color="#7232dd"
       plain
       :style="{margin:'20px 0 0 0'}"
+      to="/login"
     >退出登录</van-button>
   </div>
 </template>

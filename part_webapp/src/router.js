@@ -14,6 +14,8 @@ import studentManager from "./components/studentManager.vue";
 import evaluationDetails from "./components/evaluationDetails.vue";
 import qrCode from "./components/qrCode.vue";
 import scoreEntry from "./components/scoreEntry.vue";
+import signIn from "./components/signIn.vue";
+
 Vue.use(VueRouter);
 
 export default new VueRouter({
@@ -124,6 +126,15 @@ export default new VueRouter({
             meta: {
                 title: "成绩录入",
                 keepAlive: true,
+            }
+        },
+        {
+            path: "/signIn",
+            component: signIn,
+            meta: {
+                title: "签到详情",
+                keepAlive: true,
+                id:"signInNav"
             }
         },
     ],
