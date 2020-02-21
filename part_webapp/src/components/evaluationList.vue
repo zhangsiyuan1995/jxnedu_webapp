@@ -22,7 +22,6 @@
             <van-divider :style="{margin:'0',width:'100%'}" />
           </van-col>
         </van-row>
-        <van-button type="info" size="large" to="/evaluationCommit" style="margin-top:30px">去评价</van-button>
       </van-col>
     </van-row>
   </div>

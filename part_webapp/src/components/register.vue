@@ -1,5 +1,5 @@
 <template>
-  <div id="signIn">
+  <div id="register">
     <van-calendar
       title="日历"
       :poppable="false"
@@ -46,7 +46,7 @@ Vue.use(Row)
   .use(Tag)
   .use(CellGroup);
 export default {
-  name: "signIn",
+  name: "register",
   data() {
     return {
       date: "",
@@ -153,20 +153,20 @@ export default {
 .van-calendar__days .van-calendar__day {
   height: 49px;
 }
-#signInNav {
+#registerNav {
   background: linear-gradient(to right, #35b5fc, #2995ec);
   border: none;
 }
-#signInNav::after {
+#registerNav::after {
   border: none;
 }
-#signInNav .van-nav-bar__title {
+#registerNav .van-nav-bar__title {
   color: white;
 }
-#signInNav .van-icon {
+#registerNav .van-icon {
   color: white;
 }
-#signIn .van-calendar__weekdays {
+#register .van-calendar__weekdays {
   background: linear-gradient(to right, #35b5fc, #2995ec);
   color: white;
 }
@@ -175,15 +175,15 @@ export default {
   background: linear-gradient(to right, #35b5fc, #2995ec);
   color: white;
 }
-#signIn .van-cell {
+#register .van-cell {
   padding-left: 0;
   padding-right: 0;
 }
-#signIn .van-cell__value span {
+#register .van-cell__value span {
   color: black;
   margin-right: 15px;
 }
-#signIn .van-tag {
+#register .van-tag {
   font-size: 10px;
   padding: 0.2em 0.8em;
 }

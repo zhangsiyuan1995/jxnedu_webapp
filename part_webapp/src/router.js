@@ -14,7 +14,8 @@ import studentManager from "./components/studentManager.vue";
 import evaluationDetails from "./components/evaluationDetails.vue";
 import qrCode from "./components/qrCode.vue";
 import scoreEntry from "./components/scoreEntry.vue";
-import signIn from "./components/signIn.vue";
+import register from "./components/register.vue";
+import moneyList from "./components/moneyList.vue";
 
 Vue.use(VueRouter);
 
@@ -129,12 +130,21 @@ export default new VueRouter({
             }
         },
         {
-            path: "/signIn",
-            component: signIn,
+            path: "/register",
+            component: register,
             meta: {
                 title: "签到详情",
                 keepAlive: true,
-                id:"signInNav"
+                id:"registerNav"
+            }
+        },
+        {
+            path: "/moneyList",
+            component: moneyList,
+            meta: {
+                title: "薪资详情",
+                keepAlive: true,
+                id:"moneyListNav"
             }
         },
     ],
