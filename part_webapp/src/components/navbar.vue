@@ -1,5 +1,16 @@
 <template>
-  <van-nav-bar :id="$route.meta.id" :title="$route.meta.title" left-arrow @click-left="onClickLeft" class="nav" />
+  <van-nav-bar
+    :id="$route.meta.id"
+    :title="$route.meta.title"
+    left-arrow
+    @click-left="onClickLeft"
+    class="nav"
+    @click-right="onClickRight"
+  >
+    <template :v-if="$route.meta.newsAdd">
+      <van-icon name="plus" slot="right" />
+    </template>
+  </van-nav-bar>
 </template>
 
 <script>
@@ -14,6 +25,9 @@ export default {
   methods: {
     onClickLeft() {
       this.$router.go(-1);
+    },
+    onClickRight() {
+      this.$router.push('/noticeAdd');
     }
   }
 };

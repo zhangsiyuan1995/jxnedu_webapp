@@ -15,7 +15,12 @@ import evaluationDetails from "./components/evaluationDetails.vue";
 import qrCode from "./components/qrCode.vue";
 import scoreEntry from "./components/scoreEntry.vue";
 import register from "./components/register.vue";
+import moneyDetails from "./components/moneyDetails.vue";
 import moneyList from "./components/moneyList.vue";
+import notice from "./components/notice.vue";
+import noticeContent from "./components/noticeContent.vue";
+import noticeAdd from "./components/noticeAdd.vue";
+
 
 Vue.use(VueRouter);
 
@@ -118,7 +123,7 @@ export default new VueRouter({
             meta: {
                 title: "二维码",
                 keepAlive: true,
-                id:"qrCodeNav"
+                id: "qrCodeNav"
             }
         },
         {
@@ -135,18 +140,55 @@ export default new VueRouter({
             meta: {
                 title: "签到详情",
                 keepAlive: true,
-                id:"registerNav"
+                id: "registerNav"
+            }
+        },
+        {
+            path: "/moneyDetails",
+            component: moneyDetails,
+            meta: {
+                title: "薪资详情",
+                keepAlive: true,
+                id: "moneyDetailsNav"
             }
         },
         {
             path: "/moneyList",
             component: moneyList,
             meta: {
-                title: "薪资详情",
+                title: "薪资列表",
                 keepAlive: true,
-                id:"moneyListNav"
             }
         },
+        {
+            path: "/notice",
+            component: notice,
+            meta: {
+                title: "通知列表",
+                keepAlive: true,
+            },
+          
+        },
+        {
+            path: "/noticeContent/:newsId",
+            component: noticeContent,
+            meta: {
+                title: "通知内容",
+                keepAlive: true,
+                newsAdd:true,
+            },
+          
+        },
+        {
+            path: "/noticeAdd",
+            component: noticeAdd,
+            meta: {
+                title: "新添通知",
+                keepAlive: true,
+            },
+          
+        },
+        
     ],
-    mode: 'history'
+    mode: 'hash'
 })
