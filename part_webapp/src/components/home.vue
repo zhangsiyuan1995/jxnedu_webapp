@@ -1,6 +1,5 @@
 <template>
   <div id="index">
-
     <van-row>
       <van-col span="24">
         <img class="banner" src="../assets/img/banner.png" alt />
@@ -52,7 +51,6 @@
             <span class="custom-title">培训与制度</span>
           </template>
         </van-cell>
-        <router-link to="/">
         <div class="groupblock">
           <div>
             <p>
@@ -62,8 +60,6 @@
           </div>
           <van-divider dashed :style="{margin:0,padding:0}"></van-divider>
         </div>
-        </router-link>
-         <router-link to="/">
         <div class="groupblock">
           <div>
             <p>
@@ -73,8 +69,6 @@
           </div>
           <van-divider dashed :style="{margin:0,padding:0}"></van-divider>
         </div>
-        </router-link>
-        <router-link to="/">
         <div class="groupblock">
           <div>
             <p>
@@ -83,7 +77,6 @@
             <p>2020寒假点睛班</p>
           </div>
         </div>
-        </router-link>
       </van-col>
       <van-col class="group" span="22" offset="1">
         <van-cell value is-link to="/attStatistics">

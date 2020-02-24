@@ -20,7 +20,11 @@ import moneyList from "./components/moneyList.vue";
 import notice from "./components/notice.vue";
 import noticeContent from "./components/noticeContent.vue";
 import noticeAdd from "./components/noticeAdd.vue";
-
+import partRank from "./components/partRank.vue";
+import gift from "./components/gift.vue";
+import giftPoint from "./components/giftPoint.vue";
+import giftHistory from "./components/giftHistory.vue";
+import giftRules from "./components/giftRules.vue";
 
 Vue.use(VueRouter);
 
@@ -166,6 +170,7 @@ export default new VueRouter({
             meta: {
                 title: "通知列表",
                 keepAlive: true,
+                notice:true
             },
           
         },
@@ -175,7 +180,6 @@ export default new VueRouter({
             meta: {
                 title: "通知内容",
                 keepAlive: true,
-                newsAdd:true,
             },
           
         },
@@ -188,7 +192,47 @@ export default new VueRouter({
             },
           
         },
-        
+        {
+            path: "/partRank",
+            component: partRank,
+            meta: {
+                title: "助教排名",
+                keepAlive: true,
+            },
+          
+        },
+        {
+            path: "/gift",
+            component: gift,
+            meta: {
+                title: "福利商城",
+                keepAlive: true
+            }
+        },
+        {
+            path: "/giftPoint",
+            component: giftPoint,
+            meta: {
+                title: "我的积分",
+                keepAlive: true
+            }
+        },
+        {
+            path: "/giftHistory",
+            component: giftHistory,
+            meta: {
+                title: "兑换记录",
+                keepAlive: true
+            }
+        },
+        {
+            path: "/giftRules",
+            component: giftRules,
+            meta: {
+                title: "积分规则",
+                keepAlive: true
+            }
+        },
     ],
     mode: 'hash'
 })

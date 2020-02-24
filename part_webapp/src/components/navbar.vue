@@ -7,7 +7,7 @@
     class="nav"
     @click-right="onClickRight"
   >
-    <template :v-if="$route.meta.newsAdd">
+    <template v-if="$route.meta.notice">
       <van-icon name="plus" slot="right" />
     </template>
   </van-nav-bar>

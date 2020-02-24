@@ -15,7 +15,7 @@
           </div>
           <van-row class="threeB" type="flex" justify="space-around">
             <van-col>
-              <router-link  to="/studentRank">
+              <router-link  to="/partRank">
                 <van-icon name="medal-o" color="green" />
                 <p>我的排名</p>
               </router-link>
