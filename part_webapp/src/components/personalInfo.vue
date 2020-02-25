@@ -8,7 +8,6 @@
     <van-cell title="所在院校" value="河北师范大学" />
 
     <van-cell title="联系方式" value="1300000000" :style="{margin:'5px 0 0 0'}" />
-    <van-cell title="报名日期" value="2010-1-1" />
     
     <van-button
       type="primary"

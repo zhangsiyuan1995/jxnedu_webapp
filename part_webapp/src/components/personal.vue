@@ -21,9 +21,9 @@
               </router-link>
             </van-col>
             <van-col>
-              <router-link  to="/">
+              <router-link  to="/training">
               <van-icon name="diamond-o" color="blue" />
-              <p>学习</p>
+              <p>培训学习</p>
               </router-link>
             </van-col>
             <van-col>
@@ -46,7 +46,7 @@
                 <span class="custom-title">我的评价</span>
               </template>
             </van-cell>
-            <van-cell is-link to="/">
+            <van-cell is-link to="/myClass">
               <template slot="title">
                 <van-icon class="blueIcon" name="orders-o" />
                 <span class="custom-title">带班统计</span>

@@ -7,7 +7,7 @@
     </van-row>
     <van-row type="flex" justify="center" style="background:white">
       <van-col span="23">
-        <van-cell is-link v-for="(item,index) in noticeList" :key="index" :to="'noticeContent/'+item.newsId">
+        <van-cell is-link v-for="(item,index) in noticeList" :key="index" :to="'/noticeContent/'+item.newsId">
           <!-- 使用 title 插槽来自定义标题 -->
           <template slot="title">
             <img class="labaB" src="../assets/img/labaB.png" alt />

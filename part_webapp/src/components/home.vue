@@ -3,7 +3,6 @@
     <van-row>
       <van-col span="24">
         <img class="banner" src="../assets/img/banner.png" alt />
-        <van-button class="scan" icon="scan" plain type="info" />
       </van-col>
     </van-row>
     <van-row>
@@ -210,15 +209,5 @@ export default {
 .round h2 {
   margin: 0;
 }
-#index .scan {
-  float: right;
-  position: relative;
-  top: -240px;
-  right: 12px;
-  background-color:rgba(235, 229, 229,0);
-  border: none
-}
-.scan i{
-  font-size: 25px
-}
+
 </style>

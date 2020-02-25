@@ -25,6 +25,8 @@ import gift from "./components/gift.vue";
 import giftPoint from "./components/giftPoint.vue";
 import giftHistory from "./components/giftHistory.vue";
 import giftRules from "./components/giftRules.vue";
+import training from "./components/training.vue";
+import myClass from "./components/myClass.vue";
 
 Vue.use(VueRouter);
 
@@ -178,7 +180,7 @@ export default new VueRouter({
             path: "/noticeContent/:newsId",
             component: noticeContent,
             meta: {
-                title: "通知内容",
+                title: "",
                 keepAlive: true,
             },
           
@@ -230,6 +232,22 @@ export default new VueRouter({
             component: giftRules,
             meta: {
                 title: "积分规则",
+                keepAlive: true
+            }
+        },
+        {
+            path: "/training",
+            component: training,
+            meta: {
+                title: "培训学习",
+                keepAlive: true
+            }
+        },
+        {
+            path: "/myClass",
+            component: myClass,
+            meta: {
+                title: "我的班级",
                 keepAlive: true
             }
         },
