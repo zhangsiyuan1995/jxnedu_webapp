@@ -54,7 +54,7 @@ export default {
   height: inherit;
   background-color: white;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: rgb(212, 212, 212) 0px 0px 8px;
 }
 .ntContent .ncTitle {

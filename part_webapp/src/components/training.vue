@@ -82,7 +82,7 @@ export default {
   position: relative;
   top: 12px;
   font-size: 20px;
-  color: rgb(68, 144, 230);
+  color: #209aff;
 }
 .tBlock .van-icon-info {
   position: relative;
@@ -94,9 +94,9 @@ export default {
  color: rgb(22, 231, 109);
 }
 .tBlue{
-     color: rgb(68, 144, 230);
+     color: #209aff;
 }
 .tDate {
-  color: rgb(68, 144, 230);
+  color: #209aff;
 }
 </style>

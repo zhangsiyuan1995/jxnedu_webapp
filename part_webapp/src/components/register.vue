@@ -7,7 +7,7 @@
       :show-mark="true"
       :formatter="formatter"
       :min-date="minDate"
-      :max-date="maxDate"
+      :max-date="new Date()"
       :default-date="defaultDate"
       @confirm="onConfirm"
       :style="{ height: '280px' }"
@@ -51,8 +51,7 @@ export default {
     return {
       date: "",
       defaultDate: new Date(),
-      minDate: new Date(2020, 0, 1),
-      maxDate: new Date(),
+      minDate: new Date(2020, 1, 24),
       cale: [
         {
           month: 2,
@@ -142,19 +141,19 @@ export default {
   display: none;
 }
 .van-calendar__day .van-calendar__selected-day {
-  background-color: #3292ff;
+  background-color: #209aff;
   width: 30px;
   height: 30px;
   border-radius: 15px;
 }
 .van-calendar__bottom-info {
-  color: #3292ff;
+  color: #209aff;
 }
 .van-calendar__days .van-calendar__day {
   height: 49px;
 }
 #registerNav {
-  background: linear-gradient(to right, #35b5fc, #2995ec);
+  background: linear-gradient(to right, #209aff, #14b6fe);
   border: none;
 }
 #registerNav::after {
@@ -167,12 +166,12 @@ export default {
   color: white;
 }
 #register .van-calendar__weekdays {
-  background: linear-gradient(to right, #35b5fc, #2995ec);
+  background: linear-gradient(to right, #209aff, #14b6fe);
   color: white;
 }
 .siBar {
   padding: 10px;
-  background: linear-gradient(to right, #35b5fc, #2995ec);
+ background: linear-gradient(to right, #209aff, #14b6fe);
   color: white;
 }
 #register .van-cell {

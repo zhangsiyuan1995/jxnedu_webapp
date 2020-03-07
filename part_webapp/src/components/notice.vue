@@ -5,7 +5,7 @@
         <img class="banner2" src="../assets/img/banner2.png" alt />
       </van-col>
     </van-row>
-    <van-row type="flex" justify="center" style="background:white">
+    <van-row class="noCon" type="flex" justify="center" style="background:white">
       <van-col span="23">
         <van-cell is-link v-for="(item,index) in noticeList" :key="index" :to="'/noticeContent/'+item.newsId">
           <!-- 使用 title 插槽来自定义标题 -->
@@ -82,5 +82,9 @@ export default {
 .labaB {
   width: 16px;
   margin-right: 10px;
+}
+.noCon{
+  position: relative;
+  top: -4px;
 }
 </style>

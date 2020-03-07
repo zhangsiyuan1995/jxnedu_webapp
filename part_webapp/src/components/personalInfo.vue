@@ -8,14 +8,11 @@
     <van-cell title="所在院校" value="河北师范大学" />
 
     <van-cell title="联系方式" value="1300000000" :style="{margin:'5px 0 0 0'}" />
-    
-    <van-button
-      type="primary"
-      size="large"
-      color="#7232dd"
-      plain
-      :style="{margin:'20px 0 0 0'}"
-    >退出登录</van-button>
+    <van-row type="flex" justify="center" style="margin-top:230px">
+      <van-col span="22">
+        <van-button type="primary" size="large" color="#209aff" :style="{margin:'20px 0 0 0'}">退出登录</van-button>
+      </van-col>
+    </van-row>
   </div>
 </template>
 <script>
@@ -27,6 +24,8 @@ import {
   CellGroup,
   Field,
   Collapse,
+  Row,
+  Col,
   CollapseItem,
   Popup
 } from "vant";
@@ -35,6 +34,8 @@ Vue.use(Picker)
   .use(Cell)
   .use(Field)
   .use(Collapse)
+  .use(Row)
+  .use(Col)
   .use(CollapseItem)
   .use(Popup)
   .use(CellGroup);

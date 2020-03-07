@@ -127,6 +127,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+#gift .banner{
+  margin-top: 5px;
+}
 .threeGift {
   background-color: white;
   text-align: center;
@@ -163,7 +166,7 @@ export default {
 }
 .giftBlock .redRound {
   font-size: 11px;
-  border-radius: 3px;
+  border-radius: 5px;
   border: red solid 1px;
   padding: 2px;
   margin-bottom: 15px;

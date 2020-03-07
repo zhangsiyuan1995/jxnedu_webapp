@@ -7,7 +7,7 @@
           <h3>{{item.name}}</h3>
           <p>{{item.date}}</p>
         </div>
-        <van-button type="info" size="mini">已评价</van-button>
+        <van-button type="info" color="#209aff" size="mini">已评价</van-button>
         <van-divider dashed></van-divider>
         <div class="edCon">
           <div>
@@ -117,7 +117,8 @@ export default {
   margin-top: 4px;
 }
 .mib div p {
-  color: rgb(151, 151, 151);
+   color: #333;
+   line-height: 1.5rem;
 }
 .mib button {
   float: right;
@@ -154,6 +155,8 @@ export default {
   margin: 10px 0;
 }
 .edCon h4 {
+  font-weight: 500;
+  font-size: 14px;
   color: rgb(160, 160, 160);
 }
 .mib .edCon p {

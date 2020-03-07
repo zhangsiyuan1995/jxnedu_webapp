@@ -7,14 +7,16 @@
           v-for="(item,index) in Array.prototype.reverse.call(this.moneyList)"
           :key="index"
         >
-          <div>
-            <img src="../assets/img/coin.png" alt />
-          </div>
-          <div>
-            <h3>{{item.name}}</h3>
-            <p>佳鑫诺教育集团发布</p>
-            <p>时间：{{item.date}}</p>
-          </div>
+          <router-link :to="{path:'/moneyDetails',query:{id:item.id}}">
+            <div>
+              <img src="../assets/img/coin.png" alt />
+            </div>
+            <div>
+              <h3>{{item.name}}</h3>
+              <p>佳鑫诺教育集团发布</p>
+              <p>时间：{{item.date}}</p>
+            </div>
+          </router-link>
         </div>
       </van-col>
     </van-row>
@@ -72,7 +74,7 @@ export default {
   background-color: white;
   padding: 10px;
   margin: 10px 0;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 0 10px rgb(216, 216, 216);
 }
 .mDBlcok div img {
@@ -84,11 +86,12 @@ export default {
   margin: 5px 0;
 }
 .mDBlcok div h3 {
+  color: #666;
   font-size: 16px;
   margin-bottom: 10px;
 }
 .mDBlcok div p {
   color: rgb(168, 168, 168);
-  font-size: 10px;
+  font-size: 12px;
 }
 </style>

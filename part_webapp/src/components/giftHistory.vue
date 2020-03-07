@@ -89,7 +89,8 @@ export default {
   margin-bottom: 0;
 }
 .giftBlock {
-  padding-bottom: 15px;
+   padding-top: 7px;
+  padding-bottom: 7px;
 
 }
 .giftBlock img {
@@ -107,7 +108,7 @@ export default {
 }
 .giftBlock .redRound {
   font-size: 11px;
-  border-radius: 3px;
+  border-radius: 5px;
   border: red solid 1px;
   padding: 2px;
   margin-bottom: 15px;

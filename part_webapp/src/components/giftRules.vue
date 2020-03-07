@@ -86,12 +86,12 @@ export default {
 }
 .ruleContent {
   background-color: white;
-  border-radius: 6px;
+  border-radius: 5px;
   padding: 20px 30px;
   margin: 20px 0 50px 0
 }
 .ruleContent h3 {
-  color: #32a8ff;
+  color: #209aff;
 }
 .ruleContent p,
 .ruleContent img {

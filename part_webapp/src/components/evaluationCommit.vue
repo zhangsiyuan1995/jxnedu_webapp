@@ -31,7 +31,7 @@
                 placeholder="请输入留言"
                 show-word-limit
               />
-               <van-button type="info" size="large" style="margin-top:30px">提交评价</van-button>
+               <van-button type="info" color="#209aff" size="large" style="margin-top:30px">提交评价</van-button>
               <van-popup v-model="show" position="bottom" :style="{ height: '35%'}" round>
                 <van-picker
                   show-toolbar

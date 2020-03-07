@@ -8,25 +8,25 @@
         <template v-for="(item,index) in missionList">
           <div class="mib" v-if="item.status == value1" :key="index">
             <van-image round fit="cover" width="4rem" height="4rem" :src="item.src" />
-            <div>
+            <div class="mmP">
               <h3>{{item.name}}</h3>
               <p>{{item.date}}</p>
             </div>
             <template v-if="value1">
-              <van-button type="info" size="mini" to="/report">汇报</van-button>
+              <van-button type="info" color="#209aff" size="mini" to="/report">汇报</van-button>
             </template>
             <h4>任务内容：</h4>
-            <p>{{item.content}}</p>
+            <p class="mmContent">{{item.content}}</p>
             <h4>任务要求</h4>
             <p>{{item.claim}}</p>
             <van-divider dashed></van-divider>
             <div class="mIcon">
-              <van-icon name="clock-o" />
+              <van-icon name="clock" />
               <p>{{item.limitTime}} 截止</p>
             </div>
             <van-divider dashed></van-divider>
             <div class="mIcon">
-              <van-icon name="user-o" />
+              <van-icon name="friends" />
               <p>发布人：{{item.name}}</p>
               <template v-if="value1">
                 <h5 class="uncomplate">未完成</h5>
@@ -50,26 +50,26 @@
         <template v-for="(item,index) in missionList">
           <div class="mib" v-if="item.status == value2" :key="index">
             <van-image round fit="cover" width="4rem" height="4rem" :src="item.src" />
-            <div>
+            <div class="mmP">
               <h3>{{item.name}}</h3>
               <p>{{item.date}}</p>
             </div>
             <template v-if="value2">
-              <van-button type="info" size="mini" to="/teacherSupervision">评价</van-button>
+              <van-button type="info" color="#209aff" size="mini" to="/teacherSupervision">评价</van-button>
             </template>
             <template v-if="!value2">
-              <van-button type="info" size="mini" to="/evaluationDetails">详情</van-button>
+              <van-button type="info" color="#209aff" size="mini" to="/evaluationDetails">详情</van-button>
             </template>
             <h4>综合评价内容</h4>
-            <p>{{item.content}}</p>
+            <p class="mmContent">{{item.content}}</p>
             <van-divider dashed></van-divider>
             <div class="mIcon">
-              <van-icon name="clock-o" />
+              <van-icon name="clock" />
               <p>受评班级：{{item.limitTime}}</p>
             </div>
             <van-divider dashed></van-divider>
             <div class="mIcon">
-              <van-icon name="user-o" />
+              <van-icon name="friends" />
               <p>受评教师： {{item.name}}</p>
               <template v-if="value2">
                 <h5 class="uncomplate">未完成</h5>
@@ -183,10 +183,19 @@ export default {
   margin-right: 10px;
 }
 .mib div h3 {
-  margin-top: 4px;
+  padding-top: 6px;
+  margin-bottom: 8px;
+}
+.mmP p {
+  margin-top: 7px;
 }
 .mib div p {
   color: rgb(151, 151, 151);
+  font-size: 14px;
+}
+.mmContent {
+  line-height: 1.5rem;
+  font-size: 14px;
 }
 .mib button {
   float: right;
@@ -197,6 +206,7 @@ export default {
 .mib .mIcon p,
 .mib .mIcon .van-icon {
   display: inline-block;
+    color: rgb(151, 151, 151);
 }
 .mib .mIcon .van-icon {
   margin-right: 10px;
@@ -206,6 +216,7 @@ export default {
 }
 .mib .mIcon p {
   margin: 0;
+  font-size: 13px;
 }
 .mIcon {
   padding-bottom: 15px;
@@ -234,5 +245,11 @@ export default {
 }
 .mIcon .uncomplate {
   color: rgb(248, 36, 36);
+}
+#myMission .van-tabs__nav .van-tabs__line {
+  background-color: #209aff;
+}
+#myMission .van-dropdown-menu__title {
+  font-size: 12px;
 }
 </style>

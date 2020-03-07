@@ -12,7 +12,7 @@
       label="通知内容"
       type="textarea"
     />
-    <van-button color="#7232dd" size="large" @click=submit()>提交</van-button>
+    <van-button color="#209aff" size="large" @click=submit()>提交</van-button>
     <!-- 日期弹窗 -->
   </div>
 </template>

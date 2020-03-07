@@ -5,7 +5,7 @@
         <h1>{{totalMoney}}</h1>
       </div>
       <van-row type="flex" justify="center" class="mlBlock">
-        <van-col span="23">
+        <van-col span="22">
           <div class="mlTwo">
             <div style="border-right:1px rgb(223, 223, 223) dashed">
               <h4>工资收入</h4>
@@ -113,12 +113,12 @@ export default {
 }
 .mlTwo{
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 0 8px rgb(223, 223, 223)
 }
 .mlList{
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 0 8px rgb(223, 223, 223)
 }
 .mlList div{

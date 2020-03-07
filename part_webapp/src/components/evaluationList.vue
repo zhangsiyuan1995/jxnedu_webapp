@@ -78,7 +78,7 @@ export default {
 <style>
 .elBg {
   height: 200px;
-  background-color: rgb(81, 81, 255);
+  background-color: #209aff;
   width: 100%;
 }
 .elcontent {
@@ -88,7 +88,7 @@ export default {
 .elcontents {
   background-color: white;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: rgb(212, 212, 212) 0px 0px 8px;
 }
 .elcontent img,

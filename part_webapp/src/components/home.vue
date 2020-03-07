@@ -87,7 +87,7 @@
         <van-row type="flex" justify="space-between" style="background:white">
           <van-col span="6">
             <div class="roundP">
-              <div class="round" style="background:#3bbbfa">
+              <div class="round" style="background:#209aff">
                 <h2>56</h2>
               </div>
               <h5>应出勤天数</h5>
@@ -155,6 +155,9 @@ export default {
 #index {
   margin-bottom: 30px;
 }
+#index .van-cell{
+  padding-left: 12px;
+}
 .banner {
   width: 100%;
   margin: 0;
@@ -168,6 +171,7 @@ export default {
 }
 .groupblock div p,
 .groupblock img {
+  font-size:14px ;
   display: inline-block;
   margin-right: 15px;
   vertical-align: top;

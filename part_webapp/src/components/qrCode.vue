@@ -36,7 +36,7 @@ body{
    height: inherit;
 }
 #qrCode {
-  background: linear-gradient(to right, #98d1ce, #7db8cb);
+  background: linear-gradient(to right,#209aff, #14b6fe);
   padding: 50px 25px;
   height: 100%;
 }
@@ -58,7 +58,7 @@ body{
   margin: 0 0 40px 0;
 }
 #app #qrCodeNav {
-  background: linear-gradient(to right, #98d1ce, #7db8cb);
+  background: linear-gradient(to right,#209aff, #14b6fe);
 }
 #app #qrCodeNav .van-icon{
   color: white;

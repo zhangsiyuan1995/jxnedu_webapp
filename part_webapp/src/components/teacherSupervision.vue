@@ -22,7 +22,7 @@
       label="综合评价"
       type="textarea"
     />
-    <van-button color="#7232dd" size="large" @click="submit()">提交</van-button>
+    <van-button color="#209aff" size="large" @click="submit()">提交</van-button>
     <!-- 弹窗 -->
     <van-popup v-model="show0" position="bottom" :style="{ height: '35%'}" round>
       <van-picker show-toolbar title :columns="columns0" @cancel="show0=false" @confirm="confirm0" />
@@ -136,7 +136,7 @@ export default {
 }
 .eduPop div {
   text-align: center;
-  color: rgb(0, 102, 255);
+  color:#209aff;
 }
 .eduPop .van-icon {
   vertical-align: middle;

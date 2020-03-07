@@ -86,7 +86,7 @@ export default {
 }
 #studentManager .smCell{
   padding: 30px 20px;
-  border-radius: 10px;
+  border-radius: 5x;
   margin-bottom: 10px;
 }
 #studentManager .van-cell__title{

@@ -13,19 +13,35 @@
       label="添加备注"
       type="textarea"
     />
-    <van-button color="#7232dd" size="large" @click=submit()>提交</van-button>
+    <van-row class="rpB" type="flex" justify="center">
+      <van-col span="23">
+        <van-button  color="#209aff" size="large" @click="submit()">提交</van-button>
+      </van-col>
+    </van-row>
     <!-- 日期弹窗 -->
   </div>
 </template>
 
 <script>
 import Vue from "vue";
-import { Picker, Button, Cell, CellGroup, Field, Calendar, Popup } from "vant";
+import {
+  Picker,
+  Button,
+  Cell,
+  CellGroup,
+  Field,
+  Calendar,
+  Popup,
+  Row,
+  Col
+} from "vant";
 Vue.use(Picker)
   .use(Button)
   .use(Cell)
   .use(Field)
   .use(Calendar)
+  .use(Row)
+  .use(Col)
   .use(Popup)
   .use(CellGroup);
 export default {
@@ -66,5 +82,8 @@ export default {
 <style>
 .ptCell {
   margin-bottom: 5px;
+}
+.rpB{
+  margin-top: 290px;
 }
 </style>
