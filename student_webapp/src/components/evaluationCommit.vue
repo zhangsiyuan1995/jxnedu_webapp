@@ -102,7 +102,7 @@ export default {
 <style>
 .eCBg {
   height: 200px;
-  background-color: rgb(81, 81, 255);
+  background-color: #209aff;
   width: 100%;
 }
 .eCcontent {

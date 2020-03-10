@@ -2,7 +2,7 @@
   <div id="gift">
     <van-row type="flex" justify="center" style="background:white;  margin-bottom: 60px">
       <van-col span="22">
-        <img class="banner" src="../assets/img/bannerGift.png" alt />
+        <img class="banner" style="margin-top:10px;" src="../assets/img/bannerGift.png" alt />
         <van-row class="threeGift" type="flex" justify="space-around">
           <van-col>
             <router-link to="/giftPoint">

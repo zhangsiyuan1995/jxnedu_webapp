@@ -106,7 +106,7 @@
         <van-row type="flex" justify="space-between" style="background:white">
           <van-col span="6">
             <div class="roundP">
-              <div class="round" style="background:#3bbbfa">
+              <div class="round" style="background:#209aff">
                 <h2>56</h2>
               </div>
               <h5>应出勤天数</h5>

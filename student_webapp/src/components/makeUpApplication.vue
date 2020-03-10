@@ -8,13 +8,16 @@
     <van-field
       class="ptCell"
       v-model="message"
-      rows="1"
+      rows="4"
       height="100px"
       label="补课原因"
       type="textarea"
     />
-
-    <van-button color="#7232dd" size="large">提交</van-button>
+    <van-row type="flex" justify="center">
+      <van-col span="23">
+        <van-button class="maBu" color="#209aff" size="large">提交</van-button>
+      </van-col>
+    </van-row>
     <!-- 日期弹窗 -->
     <van-popup v-model="show0" position="bottom" :style="{ height: '35%'}" round>
       <van-datetime-picker
@@ -57,12 +60,16 @@ import {
   CellGroup,
   Field,
   DatetimePicker,
-  Popup
+  Popup,
+  Row,
+  Col
 } from "vant";
 Vue.use(Picker)
   .use(Button)
   .use(Cell)
   .use(Field)
+  .use(Row)
+  .use(Col)
   .use(DatetimePicker)
   .use(Popup)
   .use(CellGroup);
@@ -78,8 +85,6 @@ export default {
       minDate: new Date(2020, 0, 1),
       maxDate: new Date(2025, 10, 1),
       currentDate: new Date(),
-      time: "",
-      time1: "",
       classT: "请选择",
       classN: "请选择",
       ptN: "请选择",

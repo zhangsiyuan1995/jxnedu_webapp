@@ -4,11 +4,12 @@
       <van-col class="gradeB" span="22">
         <div class="gradeTitle">
           <h1>各次成绩</h1>
+          <img src="../assets/img/pR.png" alt />
           <p>SUBJECT</p>
         </div>
         <div class="gradeR"></div>
         <div class="gradeCon" v-for="(item,index) in grades" :key="index">
-            <h1>{{item.subject}}</h1>
+          <h1>{{item.subject}}</h1>
           <p>{{item.grade}}分</p>
         </div>
       </van-col>
@@ -26,46 +27,55 @@ Vue.use(Row)
   .use(CellGroup);
 export default {
   name: "grade",
-  data(){
-      return{
-          grades:[
-              {
-                  subject:"语文",
-                  grade:"88"
-              },
-               {
-                  subject:"语文",
-                  grade:"88"
-              }, {
-                  subject:"语文",
-                  grade:"88"
-              }, {
-                  subject:"语文",
-                  grade:"88"
-              }, {
-                  subject:"语文",
-                  grade:"88"
-              }, {
-                  subject:"语文",
-                  grade:"88"
-              }, {
-                  subject:"语文",
-                  grade:"88"
-              }, {
-                  subject:"语文",
-                  grade:"88"
-              }, {
-                  subject:"语文",
-                  grade:"88"
-              }, {
-                  subject:"语文",
-                  grade:"88"
-              }, {
-                  subject:"语文",
-                  grade:"88"
-              },
-          ]
-      }
+  data() {
+    return {
+      grades: [
+        {
+          subject: "语文",
+          grade: "88"
+        },
+        {
+          subject: "语文",
+          grade: "88"
+        },
+        {
+          subject: "语文",
+          grade: "88"
+        },
+        {
+          subject: "语文",
+          grade: "88"
+        },
+        {
+          subject: "语文",
+          grade: "88"
+        },
+        {
+          subject: "语文",
+          grade: "88"
+        },
+        {
+          subject: "语文",
+          grade: "88"
+        },
+        {
+          subject: "语文",
+          grade: "88"
+        },
+        {
+          subject: "语文",
+          grade: "88"
+        },
+        {
+          subject: "语文",
+          grade: "88"
+        },
+        {
+          subject: "语文",
+          grade: "88"
+        }
+      ]
+    };
   }
 };
 </script>
@@ -77,17 +87,29 @@ export default {
 }
 .gradeB {
   background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgb(177, 176, 176);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(177, 176, 176);
   margin: 20px 0 80px 0;
   padding: 15px;
 }
 .gradeTitle h1,
 .gradeTitle p {
   display: inline-block;
+}.gradeTitle h1{
+   position: relative;
+  bottom: 7px;
+  z-index: 1;
+}
+.gradeTitle img{
+  width: 50px;
+  position: relative;
+  right: 102px;
+  bottom: 15px;
+  z-index: 0;
 }
 .gradeTitle p {
   font-size: 22px;
+  
   float: right;
   color: rgb(235, 235, 235);
 }

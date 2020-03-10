@@ -22,7 +22,7 @@
             <van-divider :style="{margin:'0',width:'100%'}" />
           </van-col>
         </van-row>
-        <van-button type="info" size="large" to="/evaluationCommit" style="margin-top:30px">去评价</van-button>
+        <van-button type="info" color="#209aff" size="large" to="/evaluationCommit" style="margin-top:30px">去评价</van-button>
       </van-col>
     </van-row>
   </div>
@@ -79,7 +79,7 @@ export default {
 <style>
 .elBg {
   height: 200px;
-  background-color: rgb(81, 81, 255);
+  background-color: #209aff;
   width: 100%;
 }
 .elcontent {
@@ -90,7 +90,7 @@ export default {
   background-color: white;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: rgb(212, 212, 212) 0px 0px 8px;
+  box-shadow: rgb(212, 212, 212) 0px 0px 2px;
 }
 .elcontent img,
 .elcontent div {

@@ -21,8 +21,8 @@
         </van-row>
       </van-col>
     </van-row>
-    <van-row type="flex" justify="space-around">
-      <van-col span="23">
+    <van-row type="flex" justify="center">
+      <van-col span="22">
         <van-row type="flex" class="monthR" justify="space-between">
           <van-col span="19">
             <img src="../assets/img/123.png" alt />
@@ -198,10 +198,11 @@ export default {
   margin-top: 10px;
   padding: 20px 10px;
   text-align: center;
-} 
-.rankTen p{
+  margin-bottom:80px;
+}
+.rankTen p {
   color: #666666;
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 .monthR img,
 .monthR div {
@@ -217,7 +218,6 @@ export default {
 }
 .monthR div p {
   color: #666;
-
 }
 .monthR img {
   width: 70px;
@@ -226,7 +226,7 @@ export default {
   font-size: 38px;
   text-align: center;
   color: red;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 .van-tabs__nav .van-tabs__line {
   background-color: red;
@@ -244,18 +244,19 @@ export default {
   border: none;
 }
 .blackRank,
-.redRank{
+.redRank {
   font-size: 14px;
 }
 .blackRank .iconfont {
   font-size: 18px;
   vertical-align: top;
+  position: relative;
+  top: -2px;
 }
 .redRank {
   color: red;
 }
-.gardLine{
-  margin: 20px 0
+.gardLine {
+  margin: 20px 0;
 }
-
 </style>

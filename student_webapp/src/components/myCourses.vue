@@ -250,4 +250,11 @@ export default {
 .van-tab__pane{
   padding-bottom: 80px
 }
+#myCourses .van-tabs__nav .van-tabs__line {
+  background-color: #209aff;
+}
+.my-swipe{
+  margin-top: 10px;
+  border-radius: 5px;
+}
 </style>

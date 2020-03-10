@@ -73,6 +73,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+html{
+  height: 100%;
+}
+body{
+  height: inherit;
+}
 .banner2{
   width: 100%
 }

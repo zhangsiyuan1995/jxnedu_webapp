@@ -4,7 +4,7 @@
       <van-col span="24">
         <img class="perBg" src="../assets/img/bg3.png" alt />
       </van-col>
-      <van-col span="20" offset="2">
+      <van-col span="22" offset="1">
         <div class="perBlock">
           <img class="perHead" src="../assets/img/pHead.png" alt />
         </div>
@@ -16,7 +16,7 @@
           <van-row class="threeB" type="flex" justify="space-around">
             <van-col>
               <router-link  to="/studentRank">
-                <van-icon name="medal-o" color="blue" />
+                <van-icon name="medal-o" color="#209aff" />
                 <p>我的排名</p>
               </router-link>
             </van-col>
@@ -107,7 +107,7 @@ export default {
 }
 .blueBlock .blueIcon {
   font-size: 19px;
-  color: rgb(0, 38, 255);
+  color:#209aff;
   vertical-align: middle;
   padding-bottom: 3px;
   margin-right: 10px;
@@ -129,7 +129,7 @@ export default {
 .yellowBlock {
   border: 1px solid white;
   border-radius: 5px;
-  box-shadow: 1px 1px 1px 1px #e4e3e3;
+  box-shadow: 1px 1px 1px 1px #f0f0f0;
 }
 .perCho {
   position: relative;
@@ -160,7 +160,7 @@ export default {
   text-align: center;
   margin-top: 12px;
   border-radius: 5px;
-  box-shadow: 1px 1px 1px 1px #e4e3e3;
+  box-shadow: 1px 1px 1px 1px #f0f0f0;
   padding: 10px 0;
 }
 .threeB .van-icon {

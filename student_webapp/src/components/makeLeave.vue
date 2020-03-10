@@ -5,15 +5,12 @@
     <van-calendar v-model="show" type="range" @confirm="onConfirm" />
     <!-- <van-cell class="ptCell" title="助教姓名" :value="ptN" @click="showPopup3" /> -->
     <!-- <van-field class="ptCell" v-model="value" label="评分" placeholder="满分10" input-align="right" type="digit"/> -->
-    <van-field
-      class="ptCell"
-      v-model="message"
-      rows="1"
-      height="100px"
-      label="请假原因"
-      type="textarea"
-    />
-    <van-button color="#7232dd" size="large">提交</van-button>
+    <van-field class="ptCell" v-model="message" rows="5" label="请假原因" type="textarea" />
+    <van-row type="flex" justify="center">
+      <van-col span="22">
+        <van-button style="margin-top:20px;" color="#209aff" size="large">提交</van-button>
+      </van-col>
+    </van-row>
     <!-- 日期弹窗 -->
   </div>
 </template>
@@ -21,6 +18,8 @@
 <script>
 import Vue from "vue";
 import {
+  Row,
+  Col,
   Picker,
   Button,
   Cell,
@@ -32,6 +31,8 @@ import {
 Vue.use(Picker)
   .use(Button)
   .use(Cell)
+  .use(Row)
+  .use(Col)
   .use(Field)
   .use(Calendar)
   .use(Popup)
