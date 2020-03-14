@@ -108,4 +108,7 @@ export default {
   margin: 3px 0;
   font-weight: normal;
 }
+#myClass .groupClass .van-cell{
+  border-radius: 5px;
+}
 </style>

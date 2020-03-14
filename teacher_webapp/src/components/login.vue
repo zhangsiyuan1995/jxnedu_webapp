@@ -62,7 +62,7 @@ export default {
           data: _this.loginForm
         })
           .then(res => {
-            console.log(res.data);
+            window.console.log(res.data);
             _this.userToken = "Bearer " + res.data.data.body.token;
             // 将用户token保存到vuex中
             _this.changeLogin({ Authorization: _this.userToken });
@@ -71,7 +71,7 @@ export default {
           })
           .catch(error => {
             alert("账号或密码错误");
-            console.log(error);
+            window.console.log(error);
           });
       }
     }

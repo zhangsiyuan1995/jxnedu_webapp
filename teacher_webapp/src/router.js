@@ -21,7 +21,8 @@ export default new VueRouter({
             component: home,
             meta: {
                 title: "首页",
-                keepAlive:false
+                keepAlive:false,
+                tabbarAlive:true
             }
         },
         {
@@ -29,7 +30,8 @@ export default new VueRouter({
             component: myClass,
             meta: {
                 title: "我的班级",
-                keepAlive:true
+                keepAlive:true,
+                tabbarAlive:true
             }
         },
         {
@@ -37,7 +39,8 @@ export default new VueRouter({
             component: personalInfo,
             meta: {
                 title: "个人资料",
-                keepAlive:true
+                keepAlive:true,
+                tabbarAlive:true
             }
         },
         {
@@ -45,7 +48,8 @@ export default new VueRouter({
             component: attStatistics,
             meta: {
                 title: "出勤统计",
-                keepAlive:true
+                keepAlive:true,
+                tabbarAlive:true
             }
         },
         {
@@ -53,7 +57,8 @@ export default new VueRouter({
             component: partTime,
             meta: {
                 title: "助教监督",
-                keepAlive:true
+                keepAlive:true,
+                tabbarAlive:true
             }
         },
         {
@@ -61,7 +66,8 @@ export default new VueRouter({
             component: studentList,
             meta: {
                 title: "学员列表",
-                keepAlive:true
+                keepAlive:true,
+                tabbarAlive:true
             }
         },
         {
@@ -69,7 +75,8 @@ export default new VueRouter({
             component: teacherRank,
             meta: {
                 title: "教师排名",
-                keepAlive:true
+                keepAlive:true,
+                tabbarAlive:true
             }
         },
         {
@@ -77,7 +84,8 @@ export default new VueRouter({
             component: tuitionFee,
             meta: {
                 title: "课时费",
-                keepAlive:true
+                keepAlive:true,
+                tabbarAlive:true
             }
         },
         {
@@ -85,7 +93,8 @@ export default new VueRouter({
             component: studentDetails,
             meta: {
                 title: "学员详情",
-                keepAlive:true
+                keepAlive:true,
+                tabbarAlive:true
             }
         },
         {
@@ -93,7 +102,8 @@ export default new VueRouter({
             component: personal,
             meta: {
                 title: "个人中心",
-                keepAlive:true
+                keepAlive:true,
+                tabbarAlive:true
             }
         },
         {

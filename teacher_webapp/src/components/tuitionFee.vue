@@ -2,7 +2,7 @@
   <div id="personal">
     <van-row>
       <van-col span="22" offset="1">
-        <van-row class="van-hairline--bottom" type="flex" justify="space-around">
+        <van-row class="van-hairline--bottom" type="flex" justify="space-between">
           <van-col span="11">
             <div class="feeBlue">
               <p>课时费收入(元)</p>
@@ -94,7 +94,7 @@ export default {
   color: #ffffff;
   margin-top: 15px;
   border-radius: 5px;
-  box-shadow: 1px 2px 1px 1px #c9dbff;
+  box-shadow: 0px 0px 0px 2px #d3e1ff;
 }
 .feeRed {
   background: linear-gradient(to right, #f2564b, #f83b3a);
@@ -102,7 +102,7 @@ export default {
   color: #ffffff;
   margin-top: 15px;
   border-radius: 5px;
-  box-shadow: 1px 2px 1px 1px #ffd4d1;
+  box-shadow: 0px 0px 0px 2px #ffd4d1;
 }
 .feeBlue :first-child {
   display: inline-block;
@@ -145,7 +145,7 @@ export default {
   background-color: white;
   padding: 15px 10px 15px 0;
   border-radius: 5px;
-  box-shadow: 1px 1px 1px 1px #f5f0f0;
+  box-shadow: 0px 0px 0px 2px #f1f1f1;
 }
 .feeComp .van-cell__value {
   font-size: 18px;

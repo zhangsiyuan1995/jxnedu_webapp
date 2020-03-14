@@ -4,7 +4,7 @@
       <van-col span="24">
         <img class="perBg" src="../assets/img/bg3.png" alt />
       </van-col>
-      <van-col span="20" offset="2">
+      <van-col span="22" offset="1">
         <div class="perBlock">
           <img class="perHead" src="../assets/img/pHead.png" alt />
         </div>
@@ -89,7 +89,7 @@ export default {
 }
 .blueBlock .blueIcon {
   font-size: 19px;
-  color: rgb(0, 38, 255);
+  color: #209aff;
   vertical-align: middle;
   padding-bottom: 3px;
   margin-right: 10px;
@@ -109,7 +109,7 @@ export default {
 .perNa,.blueBlock,.yellowBlock{
   border: 1px solid white;
   border-radius: 5px;
-  box-shadow: 1px 1px 1px 1px #e4e3e3;
+  box-shadow: 0px 0px 0px 1px #f5f5f5;
 }
 .perCho{
   position: relative;

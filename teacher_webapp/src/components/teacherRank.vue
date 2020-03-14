@@ -1,7 +1,7 @@
 <template>
   <div id="teacherRank">
     <van-row class="trBg" type="flex" justify="space-around">
-      <van-col span="23">
+      <van-col span="22">
         <van-row class="trRb" type="flex" justify="space-around">
           <van-col class="trR2" span="8">
             <img src="../assets/img/sec.png" alt />
@@ -22,7 +22,7 @@
       </van-col>
     </van-row>
     <van-row type="flex" justify="space-around">
-      <van-col span="23">
+      <van-col span="22">
         <van-row type="flex" class="monthR" justify="space-between">
           <van-col span="19">
             <img src="../assets/img/123.png" alt />

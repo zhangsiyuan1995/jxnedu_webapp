@@ -4,8 +4,8 @@
     <van-cell class="ptCell" title="班级名称" :value="classN" @click="showPopup2" />
     <van-cell class="ptCell" title="助教姓名" :value="ptN" @click="showPopup3" />
     <van-field class="ptCell" v-model="value" label="评分" placeholder="满分10" input-align="right" type="digit"/>
-    <van-field class="ptCell" v-model="message" rows="1" height="100px" label="评价内容" type="textarea" />
-    <van-button  color="#7232dd" size="large">提交</van-button>
+    <van-field class="ptCell" v-model="message" rows="5" label="评价内容" type="textarea" />
+    <van-button  color="#209aff" size="large">提交</van-button>
     <!-- 日期弹窗 -->
     <van-popup v-model="show0" position="bottom" :style="{ height: '35%'}" round>
       <van-datetime-picker

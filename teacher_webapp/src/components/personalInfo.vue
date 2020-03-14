@@ -15,8 +15,7 @@
     <van-button
       type="primary"
       size="large"
-      color="#7232dd"
-      plain
+      color="#209aff"
       :style="{margin:'20px 0 0 0'}"
       to="/login"
     >退出登录</van-button>
