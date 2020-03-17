@@ -56,6 +56,7 @@ export default {
 <style>
 #giftRules {
   background: linear-gradient(to right, #57c4ff, #239cff);
+  height: inherit;
 }
 .ruleTitle {
   text-align: center;

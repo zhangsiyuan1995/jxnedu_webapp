@@ -75,7 +75,7 @@ export default {
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgb(216, 216, 216);
+  box-shadow: 0 0 2px rgb(216, 216, 216);
 }
 .mDBlcok div img {
   margin: 0 30px 0 20px;

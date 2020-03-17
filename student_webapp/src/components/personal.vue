@@ -40,12 +40,6 @@
                 <span class="custom-title">出勤统计</span>
               </template>
             </van-cell>
-            <van-cell is-link to="/">
-              <template slot="title">
-                <van-icon class="blueIcon" name="orders-o" />
-                <span class="custom-title">我的作业</span>
-              </template>
-            </van-cell>
             <van-cell value="2" is-link to="/evaluationList">
               <template slot="title">
                 <van-icon class="blueIcon" name="records" />

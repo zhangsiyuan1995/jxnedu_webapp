@@ -1,0 +1,18 @@
+POST https://example.com/home
+content-type: application/json
+
+{
+     "classPlan": {
+        "date": "2020-1-7 8:30",
+        "position": "河北城乡建设学校",
+        "class": "20秋季点睛班",
+        "content": "上课内容"
+      },
+      "myClass": ["2020寒假点睛班", "2020寒假点睛班", "2020寒假点睛班"],
+      "attendance": {
+        "should": "50",
+        "actual": "50",
+        "rest": "50",
+        "avg": "50"
+      }
+}

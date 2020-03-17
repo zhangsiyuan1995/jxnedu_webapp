@@ -15,21 +15,21 @@
           </div>
           <van-row class="threeB" type="flex" justify="space-around">
             <van-col>
-              <router-link  to="/studentRank">
+              <router-link to="/studentRank">
                 <van-icon name="medal-o" color="#209aff" />
                 <p>我的排名</p>
               </router-link>
             </van-col>
             <van-col>
-              <router-link  to="/grade">
-              <van-icon name="tosend" color="green" />
-              <p>历史成绩</p>
+              <router-link to="/grade">
+                <van-icon name="tosend" color="green" />
+                <p>历史成绩</p>
               </router-link>
             </van-col>
             <van-col>
-              <router-link  to="/gift">
-              <van-icon name="gift-o" color="red" />
-              <p>福利商城</p>
+              <router-link to="/gift">
+                <van-icon name="gift-o" color="red" />
+                <p>福利商城</p>
               </router-link>
             </van-col>
           </van-row>
@@ -38,12 +38,6 @@
               <template slot="title">
                 <van-icon class="blueIcon" name="notes-o" />
                 <span class="custom-title">出勤统计</span>
-              </template>
-            </van-cell>
-            <van-cell is-link to="/">
-              <template slot="title">
-                <van-icon class="blueIcon" name="orders-o" />
-                <span class="custom-title">我的作业</span>
               </template>
             </van-cell>
             <van-cell value="2" is-link to="/evaluationList">
@@ -84,7 +78,17 @@ Vue.use(Row)
   .use(Divider)
   .use(CellGroup);
 export default {
-  name: "personal"
+  name: "personal",
+  // methods: {
+  //   async fetch() {
+  //     const res = await this.$http.get("#");
+  //     this.items = res.data;
+  //     console.log(res.data);
+  //   }
+  // },
+  // created() {
+  //   this.fetch();
+  // }
 };
 </script>
 
@@ -107,7 +111,7 @@ export default {
 }
 .blueBlock .blueIcon {
   font-size: 19px;
-  color:#209aff;
+  color: #209aff;
   vertical-align: middle;
   padding-bottom: 3px;
   margin-right: 10px;
@@ -172,6 +176,6 @@ export default {
 }
 .threeB p {
   color: #666;
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 </style>

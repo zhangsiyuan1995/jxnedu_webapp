@@ -1,10 +1,10 @@
 <template>
-  <div id="app">
+  <div id="app" ref="app">
     <van-sticky>
       <navbar v-if="$route.meta.keepAlive"></navbar>
     </van-sticky>
     <router-view></router-view>
-    <tabbar></tabbar>
+    <tabbar v-if="$route.meta.tabbar"></tabbar>
   </div>
 </template>
 

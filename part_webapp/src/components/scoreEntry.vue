@@ -32,7 +32,11 @@
           </div>
         </template>
       </van-field>
-      <van-button type="info" size="large" @click="submit">提交</van-button>
+         <van-row class="rpB" type="flex" justify="center">
+      <van-col span="23">
+        <van-button color="#209aff" size="large" @click="submit()">提交</van-button>
+      </van-col>
+    </van-row>
     </div>
   </div>
 </template>

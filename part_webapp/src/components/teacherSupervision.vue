@@ -22,7 +22,11 @@
       label="综合评价"
       type="textarea"
     />
-    <van-button color="#209aff" size="large" @click="submit()">提交</van-button>
+      <van-row class="rpB" type="flex" justify="center">
+      <van-col span="23">
+        <van-button color="#209aff" size="large" @click="submit()">提交</van-button>
+      </van-col>
+    </van-row>
     <!-- 弹窗 -->
     <van-popup v-model="show0" position="bottom" :style="{ height: '35%'}" round>
       <van-picker show-toolbar title :columns="columns0" @cancel="show0=false" @confirm="confirm0" />
@@ -145,4 +149,5 @@ export default {
 .van-dialog__content .van-dialog__message{
     text-align: left
 }
+
 </style>

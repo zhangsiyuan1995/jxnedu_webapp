@@ -5,7 +5,7 @@
         <van-row class="van-hairline--bottom" type="flex" justify="space-between">
           <van-col span="11">
             <div class="feeBlue">
-              <p>课时费收入(元)</p>
+              <p>收入(元)</p>
               <img src="../assets/img/chart.png" alt />
               <h2>+598</h2>
               <p>本月费用</p>
@@ -136,6 +136,10 @@ export default {
   text-align: right;
   margin-bottom: 0;
   font-size: 10px;
+}
+.feeRed h2,.feeRed p,.feeBlue h2,.feeBlue p{
+  display: inline-block;
+  width: 50%;
 }
 .feeBlue h2,
 .feeRed h2 {

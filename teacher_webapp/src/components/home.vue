@@ -20,7 +20,7 @@
             <p>
               <img src="../assets/img/clock.png" alt />
             </p>
-            <p>2020年1月7日 8：30-18：00</p>
+            <p>{{data.classPlan.date}}</p>
           </div>
         </div>
         <div class="groupblock">
@@ -29,7 +29,7 @@
             <p>
               <img src="../assets/img/clock.png" alt />
             </p>
-            <p>河北城乡建设学校</p>
+            <p>{{data.classPlan.position}}</p>
           </div>
         </div>
         <div class="groupblock">
@@ -38,7 +38,7 @@
             <p>
               <img src="../assets/img/clock.png" alt />
             </p>
-            <p>20秋季点睛班</p>
+            <p>{{data.classPlan.class}}</p>
           </div>
         </div>
         <div class="groupblock">
@@ -47,7 +47,7 @@
             <p>
               <img src="../assets/img/clock.png" alt />
             </p>
-            <p>英语</p>
+            <p>{{data.classPlan.content}}</p>
           </div>
         </div>
       </van-col>
@@ -59,31 +59,14 @@
             <span class="custom-title">我的班级</span>
           </template>
         </van-cell>
-        <div class="groupblock">
+        <div class="groupblock" v-for="(item,index) in data.myClass" :key="index">
+           <van-divider v-if="index!=0" dashed :style="{margin:0,padding:0}"></van-divider>
           <div>
             <p>
               <img src="../assets/img/tag.png" alt />
             </p>
-            <p>2020寒假点睛班</p>
-          </div>
-          <van-divider dashed :style="{margin:0,padding:0}"></van-divider>
-        </div>
-        <div class="groupblock">
-          <div>
-            <p>
-              <img src="../assets/img/tag.png" alt />
-            </p>
-            <p>2020寒假点睛班</p>
-          </div>
-          <van-divider dashed :style="{margin:0,padding:0}"></van-divider>
-        </div>
-        <div class="groupblock">
-          <div>
-            <p>
-              <img src="../assets/img/tag.png" alt />
-            </p>
-            <p>2020寒假点睛班</p>
-          </div>
+            <p>{{item}}</p>
+          </div>      
         </div>
       </van-col>
       <van-col class="group" span="22" offset="1">
@@ -97,7 +80,7 @@
           <van-col span="6">
             <div class="roundP">
               <div class="round" style="background:#3bbbfa">
-                <h2>56</h2>
+                <h2>{{data.attendance.should}}</h2>
               </div>
               <h5>应出勤天数</h5>
             </div>
@@ -105,7 +88,7 @@
           <van-col span="6">
             <div class="roundP">
               <div class="round" style="background:#947ffb">
-                <h2>56</h2>
+                <h2>{{data.attendance.actual}}</h2>
               </div>
               <h5>出勤天数</h5>
             </div>
@@ -113,7 +96,7 @@
           <van-col span="6">
             <div class="roundP">
               <div class="round" style="background:#fd9392">
-                <h2>56</h2>
+                <h2>{{data.attendance.rest}}</h2>
               </div>
               <h5>休息天数</h5>
             </div>
@@ -121,7 +104,7 @@
           <van-col span="6">
             <div class="roundP">
               <div class="round" style="background:#f7a623">
-                <h2>56</h2>
+                <h2>{{data.attendance.avg}}</h2>
               </div>
               <h5>平均工时</h5>
             </div>
@@ -145,21 +128,32 @@ Vue.use(Row)
 export default {
   data() {
     return {
-      classPlan: {
-        date: "2020-1-7 8:30",
-        position: "河北城乡建设学校",
-        class: "20秋季点睛班",
-        content: "上课内容"
-      },
-      myClass: ["2020寒假点睛班", "2020寒假点睛班", "2020寒假点睛班"],
-      attendance: {
-        should: "50",
-        actual: "50",
-        rest: "50",
-        avg: "50"
+      data: {
+        classPlan: {
+          date: "2020-1-7 8:30",
+          position: "河北城乡建设学校",
+          class: "20秋季点睛班",
+          content: "上课内容"
+        },
+        myClass: ["2020寒假点睛班", "2020寒假点睛班", "2020寒假点睛班"],
+        attendance: {
+          should: "50",
+          actual: "50",
+          rest: "50",
+          avg: "50"
+        }
       }
     };
-  }
+  },
+  // methods: {
+  //   async fetch() {
+  //     const res = await this.$http.get("#");
+  //     this.data = res.data;
+  //   }
+  // },
+  // created() {
+  //   this.fetch();
+  // }
 };
 </script>
 

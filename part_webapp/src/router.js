@@ -35,7 +35,8 @@ export default new VueRouter({
             path: "/home",
             component: home,
             meta: {
-                title: "首页"
+                title: "首页",
+                tabbar:true
             }
         },
         {
@@ -43,7 +44,8 @@ export default new VueRouter({
             component: personalInfo,
             meta: {
                 title: "个人资料",
-                keepAlive: true
+                keepAlive: true,
+                tabbar:false
             }
         },
         {
@@ -51,7 +53,8 @@ export default new VueRouter({
             component: attStatistics,
             meta: {
                 title: "出勤统计",
-                keepAlive: true
+                keepAlive: true,
+                tabbar:true
             }
         },
         {
@@ -59,7 +62,8 @@ export default new VueRouter({
             component: personal,
             meta: {
                 title: "个人中心",
-                keepAlive: true
+                keepAlive: true,
+                tabbar:true
             }
         },
         {
@@ -72,7 +76,8 @@ export default new VueRouter({
             component: evaluationList,
             meta: {
                 title: "我的评价",
-                keepAlive: true
+                keepAlive: true,
+                tabbar:false
             }
         },
         {
@@ -80,7 +85,8 @@ export default new VueRouter({
             component: evaluationCommit,
             meta: {
                 title: "评价",
-                keepAlive: true
+                keepAlive: true,
+                tabbar:true
             }
         },
         {
@@ -88,7 +94,8 @@ export default new VueRouter({
             component: myMission,
             meta: {
                 title: "任务",
-                keepAlive: false
+                keepAlive: false,
+                tabbar:true
             }
         },
         {
@@ -96,7 +103,8 @@ export default new VueRouter({
             component: report,
             meta: {
                 title: "任务汇报",
-                keepAlive: true
+                keepAlive: true,
+                tabbar:false
             }
         },
         {
@@ -104,7 +112,8 @@ export default new VueRouter({
             component: teacherSupervision,
             meta: {
                 title: "教师监督",
-                keepAlive: true
+                keepAlive: true,
+                tabbar:false
             }
         },
         {
@@ -112,7 +121,8 @@ export default new VueRouter({
             component: studentManager,
             meta: {
                 title: "学生管理",
-                keepAlive: false
+                keepAlive: false,
+                tabbar:true
             }
         },
         {
@@ -120,7 +130,8 @@ export default new VueRouter({
             component: evaluationDetails,
             meta: {
                 title: "评价详情",
-                keepAlive: true
+                keepAlive: true,
+                tabbar:true
             }
         },
         {
@@ -129,7 +140,8 @@ export default new VueRouter({
             meta: {
                 title: "二维码",
                 keepAlive: true,
-                id: "qrCodeNav"
+                id: "qrCodeNav",
+                tabbar:false
             }
         },
         {
@@ -138,6 +150,7 @@ export default new VueRouter({
             meta: {
                 title: "成绩录入",
                 keepAlive: true,
+                tabbar:false
             }
         },
         {
@@ -146,7 +159,8 @@ export default new VueRouter({
             meta: {
                 title: "签到详情",
                 keepAlive: true,
-                id: "registerNav"
+                id: "registerNav",
+                tabbar:true
             }
         },
         {
@@ -155,7 +169,8 @@ export default new VueRouter({
             meta: {
                 title: "薪资详情",
                 keepAlive: true,
-                id: "moneyDetailsNav"
+                id: "moneyDetailsNav",
+                tabbar:false
             }
         },
         {
@@ -164,6 +179,7 @@ export default new VueRouter({
             meta: {
                 title: "薪资列表",
                 keepAlive: true,
+                tabbar:true
             }
         },
         {
@@ -172,7 +188,8 @@ export default new VueRouter({
             meta: {
                 title: "通知列表",
                 keepAlive: true,
-                notice:true
+                notice:true,
+                tabbar:true
             },
           
         },
@@ -182,6 +199,7 @@ export default new VueRouter({
             meta: {
                 title: "",
                 keepAlive: true,
+                tabbar:true
             },
           
         },
@@ -191,6 +209,7 @@ export default new VueRouter({
             meta: {
                 title: "新添通知",
                 keepAlive: true,
+                tabbar:true
             },
           
         },
@@ -200,6 +219,7 @@ export default new VueRouter({
             meta: {
                 title: "助教排名",
                 keepAlive: true,
+                tabbar:false
             },
           
         },
@@ -208,7 +228,8 @@ export default new VueRouter({
             component: gift,
             meta: {
                 title: "福利商城",
-                keepAlive: true
+                keepAlive: true,
+                tabbar:true
             }
         },
         {
@@ -216,7 +237,8 @@ export default new VueRouter({
             component: giftPoint,
             meta: {
                 title: "我的积分",
-                keepAlive: true
+                keepAlive: true,
+                tabbar:false
             }
         },
         {
@@ -224,7 +246,8 @@ export default new VueRouter({
             component: giftHistory,
             meta: {
                 title: "兑换记录",
-                keepAlive: true
+                keepAlive: true,
+                tabbar:true
             }
         },
         {
@@ -232,7 +255,8 @@ export default new VueRouter({
             component: giftRules,
             meta: {
                 title: "积分规则",
-                keepAlive: true
+                keepAlive: true,
+                tabbar:false
             }
         },
         {
@@ -240,7 +264,8 @@ export default new VueRouter({
             component: training,
             meta: {
                 title: "培训学习",
-                keepAlive: true
+                keepAlive: true,
+                tabbar:true
             }
         },
         {
@@ -248,7 +273,8 @@ export default new VueRouter({
             component: myClass,
             meta: {
                 title: "我的班级",
-                keepAlive: true
+                keepAlive: true,
+                tabbar:true
             }
         },
     ],

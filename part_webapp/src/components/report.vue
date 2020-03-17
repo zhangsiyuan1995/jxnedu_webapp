@@ -15,10 +15,9 @@
     />
     <van-row class="rpB" type="flex" justify="center">
       <van-col span="23">
-        <van-button  color="#209aff" size="large" @click="submit()">提交</van-button>
+        <van-button color="#209aff" size="large" @click="submit()">提交</van-button>
       </van-col>
     </van-row>
-    <!-- 日期弹窗 -->
   </div>
 </template>
 
@@ -83,7 +82,11 @@ export default {
 .ptCell {
   margin-bottom: 5px;
 }
-.rpB{
-  margin-top: 290px;
+.rpB {
+  position: fixed;
+  background-color: white;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
 }
 </style>
