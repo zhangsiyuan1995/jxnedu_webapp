@@ -6,10 +6,10 @@
           <van-row class="ntContents">
             <van-col span="24">
               <div class="ncTitle">
-                <h2>文章标题</h2>
-                <p>2020-1-1</p>
+                <h2>{{title}}</h2>
+                <p>{{date}}</p>
               </div>
-              <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+              <p>{{content}}</p>
             </van-col>
           </van-row>
         </van-col>
@@ -29,7 +29,14 @@ Vue.use(Row)
   .use(Divider)
   .use(Rate);
 export default {
-  name: "noticeContent"
+  name: "noticeContent",
+  data() {
+    return {
+      title: "文章标题",
+      date: "2020-01-01",
+      content:"内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
+    };
+  }
 };
 </script>
 
@@ -41,8 +48,8 @@ html {
 body {
   height: inherit;
 }
-#app{
-   height: inherit;
+#app {
+  height: inherit;
 }
 #noticeContent {
   height: inherit;
@@ -53,10 +60,7 @@ body {
   width: 100%;
   padding: 20px 0;
 }
-.ntContent .van-row,
-.ntContent .van-col {
-  height: inherit;
-}
+
 .ntContent {
   height: inherit;
 }

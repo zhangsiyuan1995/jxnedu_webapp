@@ -1,6 +1,6 @@
 <template>
   <div id="partTime">
-    <van-cell class="ptCell" title="剩余补课次数" value="2" />
+    <van-cell class="ptCell" title="剩余补课次数" :value="remaning" />
     <van-cell class="ptCell" title="补课日期" :value="classT" @click="showPopup0" />
     <van-cell class="ptCell" title="班级名称" :value="classN" @click="showPopup2" />
     <!-- <van-cell class="ptCell" title="助教姓名" :value="ptN" @click="showPopup3" /> -->
@@ -39,7 +39,7 @@
       />
     </van-popup>
     <!-- 姓名弹窗 -->
-    <van-popup v-model="show2" position="bottom" :style="{ height: '35%'}" round>
+    <!-- <van-popup v-model="show2" position="bottom" :style="{ height: '35%'}" round>
       <van-picker
         show-toolbar
         title
@@ -47,7 +47,7 @@
         @cancel="show1=false"
         @confirm="confirmName"
       />
-    </van-popup>
+    </van-popup> -->
   </div>
 </template>
 
@@ -77,19 +77,20 @@ export default {
   name: "partTime",
   data() {
     return {
-      value: "",
+  
       message: "",
+       classT: "请选择",
+      classN: "请选择",
+    remaning: "2",
+      columns: ["英语一班", "英语一班", "英语一班", "英语一班", "英语一班"],
+      columns1: ["王雅倩", "王雅倩", "王雅倩", "王雅倩", "王雅倩"],
       show0: false,
       show1: false,
       show2: false,
       minDate: new Date(2020, 0, 1),
       maxDate: new Date(2025, 10, 1),
       currentDate: new Date(),
-      classT: "请选择",
-      classN: "请选择",
-      ptN: "请选择",
-      columns: ["英语一班", "英语一班", "英语一班", "英语一班", "英语一班"],
-      columns1: ["王雅倩", "王雅倩", "王雅倩", "王雅倩", "王雅倩"]
+     
     };
   },
   methods: {
@@ -122,11 +123,11 @@ export default {
       this.classN = e;
       this.show1 = false;
     },
-    confirmName(e) {
-      window.console.log(e);
-      this.ptN = e;
-      this.show2 = false;
-    }
+    // confirmName(e) {
+    //   window.console.log(e);
+    //   this.ptN = e;
+    //   this.show2 = false;
+    // }
   }
 };
 </script>

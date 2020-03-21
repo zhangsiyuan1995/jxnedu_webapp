@@ -84,7 +84,14 @@ Vue.use(Row)
   .use(Divider)
   .use(CellGroup);
 export default {
-  name: "personal"
+  name: "personal",
+  data(){
+    return{
+      name:"王雅倩",
+      phone:"13700000000",
+      evlName:"5"
+    }
+  }
 };
 </script>
 

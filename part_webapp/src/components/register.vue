@@ -2,6 +2,7 @@
   <div id="register">
     <van-calendar
       title="日历"
+      :show-subtitle="false"
       :poppable="false"
       :show-confirm="false"
       :show-mark="true"
@@ -54,41 +55,41 @@ export default {
       minDate: new Date(2020, 1, 24),
       cale: [
         {
-          month: 2,
-          date: 20
+          year: 2020,
+          month: 3,
+          days: 18
         },
         {
-          month: 2,
-          date: 21
+          year: 2020,
+          month: 3,
+          days: 19
         },
         {
-          month: 2,
-          date: 22
+          year: 2020,
+          month: 3,
+          days: 20
         },
         {
-          month: 2,
-          date: 23
-        },
-        {
-          month: 2,
-          date: 24
+          year: 2020,
+          month: 3,
+          days: 21
         }
       ],
       abnormal: [
         {
           name: "王雅倩",
           time: "2020-1-1  8:30",
-          state: "3"
+          state: "3" //请假
         },
         {
           name: "王雅倩",
           time: "2020-1-1  8:30",
-          state: "2"
+          state: "2" //缺卡
         },
         {
           name: "王雅倩",
           time: "2020-1-1  8:30",
-          state: "1"
+          state: "1" //迟到
         },
         {
           name: "王雅倩",
@@ -100,13 +101,16 @@ export default {
   },
   methods: {
     formatter(day) {
+      const year = day.date.getFullYear();
       const month = day.date.getMonth() + 1;
-      const date = day.date.getDate();
+      const days = day.date.getDate();
       for (var i = 0; i < this.cale.length; i++) {
-        if (month === this.cale[i].month) {
-          if (date === this.cale[i].date) {
-            day.bottomInfo = "✓";
-          }
+        if (
+          year === this.cale[i].year &&
+          month === this.cale[i].month &&
+          days === this.cale[i].days
+        ) {
+          day.bottomInfo = "✓";
         }
       }
       return day;
@@ -171,7 +175,7 @@ export default {
 }
 .siBar {
   padding: 10px;
- background: linear-gradient(to right, #209aff, #14b6fe);
+  background: linear-gradient(to right, #209aff, #14b6fe);
   color: white;
 }
 #register .van-cell {

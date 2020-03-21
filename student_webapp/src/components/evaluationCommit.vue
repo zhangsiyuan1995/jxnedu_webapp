@@ -9,7 +9,7 @@
             <div class="eChead">
               <img src="../assets/img/pHead.png" alt />
               <div>
-                <h2>Mei qi</h2>
+                <h2>{{name}}</h2>
                 <p>帐号：10000000</p>
                 <h1>您的评价让我们做得更好</h1>
                 <p>你的反馈将有助于提高我们教师的授课经验</p>
@@ -23,15 +23,16 @@
                 allow-half
                 @change="onChange"
               />
-              <van-cell class="elCell" :title="name" @click="showPopup" />
-              <van-field class="elCell"
+              <van-cell class="elCell" :title="teacherName" @click="showPopup" />
+              <van-field
+                class="elCell"
                 v-model="message"
                 rows="5"
                 type="textarea"
                 placeholder="请输入留言"
                 show-word-limit
               />
-               <van-button type="info" size="large" style="margin-top:30px">提交评价</van-button>
+              <van-button type="info" size="large" style="margin-top:30px">提交评价</van-button>
               <van-popup v-model="show" position="bottom" :style="{ height: '35%'}" round>
                 <van-picker
                   show-toolbar
@@ -76,10 +77,13 @@ export default {
   data() {
     return {
       value: 0,
+      message: "",
+      teacherName: "选择教师名称",
+
       show: false,
-      message:"",
-      name: "选择教师名称",
-      columns: ["梁苏萌", "梁苏萌", "梁苏萌", "梁苏萌", "梁苏萌"]
+
+      columns: ["梁苏萌", "梁苏萌", "梁苏萌", "梁苏萌", "梁苏萌"],
+      name:"王雅倩"
     };
   },
   methods: {

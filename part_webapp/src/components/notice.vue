@@ -7,7 +7,12 @@
     </van-row>
     <van-row class="noCon" type="flex" justify="center" style="background:white">
       <van-col span="23">
-        <van-cell is-link v-for="(item,index) in noticeList" :key="index" :to="'/noticeContent/'+item.newsId">
+        <van-cell
+          is-link
+          v-for="(item,index) in noticeList"
+          :key="index"
+          :to="'/noticeContent/'+item.newsId"
+        >
           <!-- 使用 title 插槽来自定义标题 -->
           <template slot="title">
             <img class="labaB" src="../assets/img/labaB.png" alt />
@@ -38,32 +43,32 @@ export default {
         {
           newsId: "1",
           title: "标题标题",
-          label: "摘要摘要",
+          label: "摘要摘要"
         },
         {
-           newsId: "1",
+          newsId: "1",
           title: "标题标题",
-          label: "摘要摘要",
+          label: "摘要摘要"
         },
         {
-           newsId: "1",
+          newsId: "1",
           title: "标题标题",
-          label: "摘要摘要",
+          label: "摘要摘要"
         },
         {
-            newsId: "1",
+          newsId: "1",
           title: "标题标题",
-          label: "摘要摘要",
+          label: "摘要摘要"
         },
         {
-           newsId: "1",
+          newsId: "1",
           title: "标题标题",
-          label: "摘要摘要",
+          label: "摘要摘要"
         },
         {
           id: "1",
           title: "标题标题",
-          label: "摘要摘要",
+          label: "摘要摘要"
         }
       ]
     };
@@ -83,8 +88,9 @@ export default {
   width: 16px;
   margin-right: 10px;
 }
-.noCon{
+.noCon {
   position: relative;
   top: -4px;
+  margin-bottom: 50px;;
 }
 </style>

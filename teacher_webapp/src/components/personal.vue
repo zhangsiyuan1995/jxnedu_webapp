@@ -10,11 +10,11 @@
         </div>
         <div class="perCho">
           <div class="perNa">
-            <h4>Mei qi</h4>
-            <p>1316228787</p>
+            <h4>{{name}}</h4>
+            <p>{{phone}}</p>
           </div>
           <div class="blueBlock">
-            <van-cell value="635元" is-link  to="/tuitionFee">
+            <van-cell :value="classFee" is-link  to="/tuitionFee">
               <template slot="title">
                 <van-icon class="blueIcon"  name="pending-payment"/>
                 <span class="custom-title">我的课时费</span>
@@ -26,7 +26,7 @@
                 <span class="custom-title">我的出勤统计</span>
               </template>
             </van-cell>
-            <van-cell value="第六名" is-link to="/teacherRank">
+            <van-cell :value="rank" is-link to="/teacherRank">
               <template slot="title">
                 <van-icon class="blueIcon" name="chart-trending-o" />
                 <span class="custom-title">我的排名</span>
@@ -61,10 +61,11 @@ export default {
   name: "personal",
   data(){
     return{
+      id:"12",
       name:"王雅倩",
       phone:"13710111111",
       classFee:"355",
-      runk:"6"
+      rank:"6"
     }
   }
 };

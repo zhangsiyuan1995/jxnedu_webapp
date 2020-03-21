@@ -13,6 +13,7 @@
     <div class="seHead">
       <p>姓名</p>
       <p>座位号</p>
+      <p>手机号</p>
     </div>
     <div class="seIn">
       <van-field
@@ -22,21 +23,22 @@
         type="number"
         input-align="right"
         placeholder="请输入"
-        label-width="60%"
+        label-width="70%"
         maxlength="5"
       >
         <template slot="label">
           <div>
             <p>{{item.name}}</p>
+            <p>{{item.num}}</p>
             <p>{{item.phone}}</p>
           </div>
         </template>
       </van-field>
-         <van-row class="rpB" type="flex" justify="center">
-      <van-col span="23">
-        <van-button color="#209aff" size="large" @click="submit()">提交</van-button>
-      </van-col>
-    </van-row>
+      <van-row class="rpB" type="flex" justify="center">
+        <van-col span="23">
+          <van-button color="#209aff" size="large" @click="submit()">提交</van-button>
+        </van-col>
+      </van-row>
     </div>
   </div>
 </template>
@@ -72,38 +74,45 @@ export default {
       testDate: "请选择",
       studentList: [
         {
+          id: "10",
           name: "张思远",
-          phone: "20",
+          num: "20",
+          phone: "13700000000",
           score: null
         },
         {
+          id: "10",
           name: "张思远",
-          phone: "20",
+          num: "20",
+          phone: "13700000000",
           score: null
         },
         {
+          id: "10",
           name: "张思远",
-          phone: "20",
+          num: "20",
+          phone: "13700000000",
           score: null
         },
         {
+          id: "10",
           name: "张思远",
-          phone: "20",
+          num: "20",
+          phone: "13700000000",
           score: null
         },
         {
+          id: "10",
           name: "张思远",
-          phone: "20",
+          num: "20",
+          phone: "13700000000",
           score: null
         },
         {
+          id: "10",
           name: "张思远",
-          phone: "20",
-          score: null
-        },
-        {
-          name: "张思远",
-          phone: "20",
+          num: "20",
+          phone: "13700000000",
           score: null
         }
       ]

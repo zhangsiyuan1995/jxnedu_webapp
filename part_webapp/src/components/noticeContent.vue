@@ -29,7 +29,12 @@ Vue.use(Row)
   .use(Divider)
   .use(Rate);
 export default {
-  name: "noticeContent"
+  name: "noticeContent",
+  data(){
+    return{
+      data:{title:"文章标题",date:"2020-01-01",content:"文章内容文章内容文章内容文章内容文章内容文章内容"}  
+    }
+  }
 };
 </script>
 
@@ -45,7 +50,7 @@ export default {
   height: inherit;
 }
 .ntContent{
-   height: inherit;
+   height: 98%;
 }
 #noticeContent {
   height: inherit;

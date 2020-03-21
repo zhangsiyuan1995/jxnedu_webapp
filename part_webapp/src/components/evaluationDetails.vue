@@ -69,17 +69,6 @@ export default {
   name: "evaloutaionList",
   data() {
     return {
-      active: 0,
-      value1: 1,
-      option1: [
-        { text: "已完成", value: 0 },
-        { text: "未完成", value: 1 }
-      ],
-      value2: 1,
-      option2: [
-        { text: "已完成", value: 0 },
-        { text: "未完成", value: 1 }
-      ],
       missionList: [
         {
           src: require("../assets/img/pHead.png"),

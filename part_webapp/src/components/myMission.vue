@@ -47,7 +47,7 @@
         <van-dropdown-menu>
           <van-dropdown-item v-model="value2" :options="option2" />
         </van-dropdown-menu>
-        <template v-for="(item,index) in missionList">
+        <template v-for="(item,index) in eduList">
           <div class="mib" v-if="item.status == value2" :key="index">
             <van-image round fit="cover" width="4rem" height="4rem" :src="item.src" />
             <div class="mmP">
@@ -65,12 +65,12 @@
             <van-divider dashed></van-divider>
             <div class="mIcon">
               <van-icon name="clock" />
-              <p>受评班级：{{item.limitTime}}</p>
+              <p>受评班级：{{item.className}}</p>
             </div>
             <van-divider dashed></van-divider>
             <div class="mIcon">
               <van-icon name="friends" />
-              <p>受评教师： {{item.name}}</p>
+              <p>受评教师： {{item.teacherNmae}}</p>
               <template v-if="value2">
                 <h5 class="uncomplate">未完成</h5>
               </template>
@@ -161,6 +161,44 @@ export default {
           claim: "认真完成",
           limitTime: "2020-1-1 18:00"
         }
+      ],
+       eduList: [
+        {
+          status: 0,
+          src: require("../assets/img/pHead.png"),
+          name: "王雅倩",
+          id: "12",
+          date: "2020-1-1 10:30",
+          content:
+            "任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容",
+          claim: "认真完成",
+          className: "2020寒假班",
+          teacherNmae:"张思远"
+        },
+          {
+          status: 1,
+          src: require("../assets/img/pHead.png"),
+          name: "王雅倩",
+          id: "12",
+          date: "2020-1-1 10:30",
+          content:
+            "任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容",
+          claim: "认真完成",
+          className: "2020寒假班",
+          teacherNmae:"张思远"
+        },
+      {
+          status: 1,
+          src: require("../assets/img/pHead.png"),
+          name: "王雅倩",
+          id: "12",
+          date: "2020-1-1 10:30",
+          content:
+            "任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容",
+          claim: "认真完成",
+          className: "2020寒假班",
+          teacherNmae:"张思远"
+        },
       ]
     };
   }

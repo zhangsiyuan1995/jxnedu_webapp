@@ -88,7 +88,7 @@
           <van-col span="6">
             <div class="roundP">
               <div class="round" style="background:#209aff">
-                <h2>56</h2>
+                <h2>{{attendance.should}}</h2>
               </div>
               <h5>应出勤天数</h5>
             </div>
@@ -96,7 +96,7 @@
           <van-col span="6">
             <div class="roundP">
               <div class="round" style="background:#947ffb">
-                <h2>56</h2>
+                <h2>{{attendance.actual}}</h2>
               </div>
               <h5>出勤天数</h5>
             </div>
@@ -104,7 +104,7 @@
           <van-col span="6">
             <div class="roundP">
               <div class="round" style="background:#fd9392">
-                <h2>56</h2>
+                <h2>{{attendance.rest}}</h2>
               </div>
               <h5>休息天数</h5>
             </div>
@@ -112,7 +112,7 @@
           <van-col span="6">
             <div class="roundP">
               <div class="round" style="background:#f7a623">
-                <h2>56</h2>
+                <h2>{{attendance.avg}}</h2>
               </div>
               <h5>平均工时</h5>
             </div>
@@ -145,8 +145,36 @@ Vue.use(Row)
   .use(Divider)
   .use(CellGroup);
 export default {
-  name:"home",
-
+  name: "home",
+  data() {
+    return {
+      mission: {
+        date: "2020-1-17 8:30-18:00",
+        postion: "河北城乡建设学校",
+        content: "任务内容任务内容"
+      },
+      training: [
+        {
+          id: "1",
+          title: "2020寒假培训"
+        },
+        {
+          id: "1",
+          title: "2020寒假培训"
+        },
+        {
+          id: "1",
+          title: "2020寒假培训"
+        }
+      ],
+      attendance: {
+        should: "50",
+        actual: "50",
+        rest: "50",
+        avg: "50"
+      }
+    };
+  }
 };
 </script>
 
@@ -155,7 +183,7 @@ export default {
 #index {
   margin-bottom: 30px;
 }
-#index .van-cell{
+#index .van-cell {
   padding-left: 12px;
 }
 .banner {
@@ -171,7 +199,7 @@ export default {
 }
 .groupblock div p,
 .groupblock img {
-  font-size:14px ;
+  font-size: 14px;
   display: inline-block;
   margin-right: 15px;
   vertical-align: top;
@@ -213,5 +241,4 @@ export default {
 .round h2 {
   margin: 0;
 }
-
 </style>

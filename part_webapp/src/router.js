@@ -199,7 +199,7 @@ export default new VueRouter({
             meta: {
                 title: "",
                 keepAlive: true,
-                tabbar:true
+                tabbar:false
             },
           
         },
@@ -209,7 +209,7 @@ export default new VueRouter({
             meta: {
                 title: "新添通知",
                 keepAlive: true,
-                tabbar:true
+                tabbar:false
             },
           
         },

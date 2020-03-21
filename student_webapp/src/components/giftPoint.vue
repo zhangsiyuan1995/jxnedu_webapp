@@ -54,6 +54,9 @@ export default {
   name: "giftPoint",
   data() {
     return {
+      name:"张思远",
+      total:"676",
+      num:"33",
       pointList: [
         {
           name: "10寒假点睛班",

@@ -5,7 +5,7 @@
         <img class="banner2" src="../assets/img/banner2.png" alt />
       </van-col>
     </van-row>
-    <van-row type="flex" justify="center" style="background:white">
+    <van-row type="flex" class="noticeBlock" justify="center" style="background:white;">
       <van-col span="23">
         <van-cell is-link v-for="(item,index) in noticeList" :key="index" :to="item.link">
           <!-- 使用 title 插槽来自定义标题 -->
@@ -36,34 +36,22 @@ export default {
     return {
       noticeList: [
         {
+          id: "12",
           title: "标题标题",
           label: "摘要摘要",
           link: "noticeContent"
         },
         {
+          id: "12",
           title: "标题标题",
           label: "摘要摘要",
-          link: "#"
+          link: "noticeContent"
         },
         {
+          id: "12",
           title: "标题标题",
           label: "摘要摘要",
-          link: "#"
-        },
-        {
-          title: "标题标题",
-          label: "摘要摘要",
-          link: "#"
-        },
-        {
-          title: "标题标题",
-          label: "摘要摘要",
-          link: "#"
-        },
-        {
-          title: "标题标题",
-          label: "摘要摘要",
-          link: "#"
+          link: "noticeContent"
         }
       ]
     };
@@ -73,14 +61,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-html{
+html {
   height: 100%;
 }
-body{
+body {
   height: inherit;
 }
-.banner2{
-  width: 100%
+.banner2 {
+  width: 100%;
 }
 .noticLable {
   padding-left: 25px;
@@ -88,5 +76,9 @@ body{
 .labaB {
   width: 16px;
   margin-right: 10px;
+}
+.noticeBlock{
+  position: relative;
+  top: -4px;
 }
 </style>

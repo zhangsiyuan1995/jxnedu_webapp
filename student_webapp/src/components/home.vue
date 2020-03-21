@@ -1,6 +1,5 @@
 <template>
   <div id="index">
-
     <van-row>
       <van-col span="24">
         <img class="banner" src="../assets/img/banner.png" alt />
@@ -22,7 +21,7 @@
             <p>
               <img src="../assets/img/clock.png" alt />
             </p>
-            <p>20寒假医学影像专业基础强化班</p>
+            <p>{{data.classPlan.class}}</p>
           </div>
         </div>
         <div class="groupblock">
@@ -31,7 +30,7 @@
             <p>
               <img src="../assets/img/clock.png" alt />
             </p>
-            <p>20寒假医学影像专业基础强化班</p>
+            <p>{{data.classPlan.remainingclass}}</p>
           </div>
         </div>
         <div class="groupblock">
@@ -40,7 +39,7 @@
             <p>
               <img src="../assets/img/clock.png" alt />
             </p>
-            <p>河北城乡建设学校</p>
+            <p>{{data.classPlan.position}}</p>
           </div>
         </div>
         <div class="groupblock">
@@ -49,7 +48,7 @@
             <p>
               <img src="../assets/img/clock.png" alt />
             </p>
-            <p>英语</p>
+            <p>{{data.classPlan.content}}</p>
           </div>
         </div>
       </van-col>
@@ -64,35 +63,17 @@
 
         <van-notice-bar
           color="#1989fa"
-          text="通知内容通知内容通知内容通知内容通知内容通知内容通知内容"
+          :text="data.notice"
           background="#ecf9ff"
           left-icon="info-o"
         />
-
-        <div class="groupblock">
+        <div class="groupblock" v-for="(item,index) in data.myClass" :key="index">
+          <van-divider v-if="index!=0" dashed :style="{margin:0,padding:0}"></van-divider>
           <div>
             <p>
               <img src="../assets/img/laba.png" alt />
             </p>
-            <p>2020寒假点睛班</p>
-          </div>
-          <van-divider dashed :style="{margin:0,padding:0}"></van-divider>
-        </div>
-        <div class="groupblock">
-          <div>
-            <p>
-              <img src="../assets/img/laba.png" alt />
-            </p>
-            <p>2020寒假点睛班</p>
-          </div>
-          <van-divider dashed :style="{margin:0,padding:0}"></van-divider>
-        </div>
-        <div class="groupblock">
-          <div>
-            <p>
-              <img src="../assets/img/laba.png" alt />
-            </p>
-            <p>2020寒假点睛班</p>
+            <p>{{item.name}}</p>
           </div>
         </div>
       </van-col>
@@ -107,7 +88,7 @@
           <van-col span="6">
             <div class="roundP">
               <div class="round" style="background:#209aff">
-                <h2>56</h2>
+                <h2>{{data.attendance.should}}</h2>
               </div>
               <h5>应出勤天数</h5>
             </div>
@@ -115,7 +96,7 @@
           <van-col span="6">
             <div class="roundP">
               <div class="round" style="background:#947ffb">
-                <h2>56</h2>
+                <h2>{{data.attendance.actual}}</h2>
               </div>
               <h5>出勤天数</h5>
             </div>
@@ -123,7 +104,7 @@
           <van-col span="6">
             <div class="roundP">
               <div class="round" style="background:#fd9392">
-                <h2>56</h2>
+                <h2>{{data.attendance.rest}}</h2>
               </div>
               <h5>休息天数</h5>
             </div>
@@ -131,7 +112,7 @@
           <van-col span="6">
             <div class="roundP">
               <div class="round" style="background:#f7a623">
-                <h2>56</h2>
+                <h2>{{data.attendance.avg}}</h2>
               </div>
               <h5>请假次数</h5>
             </div>
@@ -164,8 +145,41 @@ Vue.use(Row)
   .use(Divider)
   .use(CellGroup);
 export default {
-  name:"home",
-
+  name: "home",
+  data() {
+    return {
+      data: {
+        classPlan: {
+          class: "20秋季点睛班",
+          remainingclass: "20秋季点睛班",
+          position: "河北城乡建设学校",
+          content: "上课内容"
+        },
+        notice:
+          "通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容通知内容",
+        myClass: [
+          {
+            id: "1",
+            name: "2020寒假班"
+          },
+          {
+            id: "1",
+            name: "2020寒假班"
+          },
+          {
+            id: "1",
+            name: "2020寒假班"
+          }
+        ],
+        attendance: {
+          should: "50",
+          actual: "50",
+          rest: "50",
+          avg: "50"
+        }
+      }
+    };
+  }
 };
 </script>
 
@@ -211,15 +225,17 @@ export default {
   margin-right: 5px;
   vertical-align: top;
 }
-.round {
+#index .round {
   width: 70px;
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: center;
   border-radius: 100px;
   color: white;
+  margin-right: 0;
+  position: relative;
+  left: 7px;
 }
 .roundP {
   padding: 7px;
@@ -233,10 +249,17 @@ export default {
   position: relative;
   top: -240px;
   right: 12px;
-  background-color:rgba(235, 229, 229,0);
-  border: none
+  background-color: rgba(235, 229, 229, 0);
+  border: none;
 }
-.scan i{
-  font-size: 25px
+.scan i {
+  font-size: 25px;
+}
+.rpB {
+  position: fixed;
+  background-color: white;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
 }
 </style>

@@ -85,6 +85,8 @@ export default {
   },
   data() {
     return {
+      rank:"6",
+      date:"2020-01-01",
       studentRank: [
         {
           teaName: "张思远",

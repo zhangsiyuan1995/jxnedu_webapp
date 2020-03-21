@@ -65,7 +65,7 @@
             <p>
               <img src="../assets/img/tag.png" alt />
             </p>
-            <p>{{item}}</p>
+            <p>{{item.name}}</p>
           </div>      
         </div>
       </van-col>
@@ -135,7 +135,20 @@ export default {
           class: "20秋季点睛班",
           content: "上课内容"
         },
-        myClass: ["2020寒假点睛班", "2020寒假点睛班", "2020寒假点睛班"],
+          myClass: [
+          {
+            id: "1",
+            name: "2020寒假班"
+          },
+          {
+            id: "1",
+            name: "2020寒假班"
+          },
+          {
+            id: "1",
+            name: "2020寒假班"
+          }
+        ],
         attendance: {
           should: "50",
           actual: "50",

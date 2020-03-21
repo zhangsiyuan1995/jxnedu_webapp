@@ -87,7 +87,7 @@ export default {
         classN: "请选择",
         teacherN: "请选择",
         attendance: "请选择",
-        content: "",
+        content: "", 
         eval: ""
       }
     };

@@ -7,12 +7,16 @@
     <van-field
       class="ptCell"
       v-model="parms.note"
-      rows="4"
+      rows="8"
       height="100px"
       label="通知内容"
       type="textarea"
     />
-    <van-button color="#209aff" size="large" @click=submit()>提交</van-button>
+       <van-row class="rpB" type="flex" justify="center">
+      <van-col span="23">
+        <van-button color="#209aff" size="large" @click="submit()">提交</van-button>
+      </van-col>
+    </van-row>
     <!-- 日期弹窗 -->
   </div>
 </template>

@@ -3,12 +3,12 @@
     <div class="asBlock">
       <van-image :src="headImg" />
       <div>
-        <h3>Mei qi</h3>
-        <p>13162288787</p>
+        <h3>{{name}}</h3>
+        <p>{{phone}}</p>
       </div>
     </div>
-    <van-cell title="平均课时" value="8.4小时" />
-    <van-cell title="出勤天数" value="10天" />
+    <van-cell title="平均课时" :value="avgClassTime+'小时'" />
+    <van-cell title="出勤天数" :value="attDays+'天'" />
     <van-collapse v-model="activeName" accordion>
       <van-collapse-item title="出勤班次" name="1">
         <van-cell
@@ -54,8 +54,10 @@ export default {
   data() {
     return {
       headImg: require("../assets/img/head.png"),
-      avgClassTime:"",
-      attDays:"",
+      name:"王雅倩",
+      phone:"1370000000",
+      avgClassTime:"8.4",
+      attDays:"10",
       activeName: "",
       attDate: [
         {

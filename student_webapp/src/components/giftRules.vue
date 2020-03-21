@@ -9,17 +9,9 @@
         <div class="ruleContent">
           <h3>积分获取途径</h3>
           <van-row>
-            <van-col span="24">
+            <van-col span="24" v-for="(item,index) in rulesList" :key="index">
               <img src="../assets/img/giftRuleLi.png" alt />
-              <p>积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则</p>
-            </van-col>
-             <van-col span="24">
-              <img src="../assets/img/giftRuleLi.png" alt />
-              <p>积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则</p>
-            </van-col>
-             <van-col span="24">
-              <img src="../assets/img/giftRuleLi.png" alt />
-              <p>积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则</p>
+              <p>{{item}}</p>
             </van-col>
           </van-row>
         </div>
@@ -49,6 +41,17 @@ Vue.use(Picker)
   .use(CellGroup);
 export default {
   name: "giftRules",
+  data() {
+    return {
+      rulesList: [
+        "积分规则积分规则积分规则积分规则积分规则积分规则积分规则积",
+        "积分规则积分规则积分规则积分规则积分规则积分规则积分规则积",
+        "积分规则积分规则积分规则积分规则积分规则积分规则积分规则积",
+        "积分规则积分规则积分规则积分规则积分规则积分规则积分规则积",
+        "积分规则积分规则积分规则积分规则积分规则积分规则积分规则积"
+      ]
+    };
+  }
 };
 </script>
 
@@ -56,6 +59,7 @@ export default {
 <style>
 #giftRules {
   background: linear-gradient(to right, #57c4ff, #239cff);
+  height: inherit;
 }
 .ruleTitle {
   text-align: center;
@@ -88,7 +92,7 @@ export default {
   background-color: white;
   border-radius: 6px;
   padding: 20px 30px;
-  margin: 20px 0 50px 0
+  margin: 20px 0 50px 0;
 }
 .ruleContent h3 {
   color: #32a8ff;
@@ -99,16 +103,16 @@ export default {
 }
 .ruleContent img {
   vertical-align: top;
-  padding-top: 3px
+  padding-top: 3px;
 }
-.ruleContent h3{
-  text-align: center
+.ruleContent h3 {
+  text-align: center;
 }
 .ruleContent p {
   line-height: 20px;
   color: #666;
   width: 90%;
   padding-left: 10px;
-  margin-top: 0
+  margin-top: 0;
 }
 </style>

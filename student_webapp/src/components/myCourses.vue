@@ -54,12 +54,6 @@
               <van-swipe-item>
                 <img class="banner" src="../assets/img/classBanner.png" alt />
               </van-swipe-item>
-              <van-swipe-item>
-                <img class="banner" src="../assets/img/classBanner.png" alt />
-              </van-swipe-item>
-              <van-swipe-item>
-                <img class="banner" src="../assets/img/classBanner.png" alt />
-              </van-swipe-item>
             </van-swipe>
             <div class="groupClass" v-for="(item,index) in courses" :key="index">
               <van-row>
@@ -90,12 +84,6 @@
       <van-tab title="剩余课程">  <van-row>
           <van-col span="22" offset="1">
             <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
-              <van-swipe-item>
-                <img class="banner" src="../assets/img/classBanner.png" alt />
-              </van-swipe-item>
-              <van-swipe-item>
-                <img class="banner" src="../assets/img/classBanner.png" alt />
-              </van-swipe-item>
               <van-swipe-item>
                 <img class="banner" src="../assets/img/classBanner.png" alt />
               </van-swipe-item>
@@ -169,7 +157,7 @@ export default {
           coursesTime: "课时：12天/专业，￥专1660元/专业",
           tag: "签订协议 全程辅导",
           money: "1800",
-          status: "已开课"
+          status: 0
         },
         {
           name: "高端课目标协议班",
@@ -178,7 +166,7 @@ export default {
           coursesTime: "课时：12天/专业，￥专1660元/专业",
           tag: "签订协议 全程辅导",
           money: "1800",
-          status: "已开课"
+          status: 1
         },
         {
           name: "高端课目标协议班",
@@ -187,9 +175,10 @@ export default {
           coursesTime: "课时：12天/专业，￥专1660元/专业",
           tag: "签订协议 全程辅导",
           money: "1800",
-          status: "已开课"
+          status: 2
         }
-      ]
+      ],
+      banner:[require("../assets/img/classBanner.png"),require("../assets/img/classBanner.png")]
     };
   }
 };

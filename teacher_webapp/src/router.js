@@ -40,7 +40,7 @@ export default new VueRouter({
             meta: {
                 title: "个人资料",
                 keepAlive:true,
-                tabbarAlive:true
+                tabbarAlive:false
             }
         },
         {
@@ -67,7 +67,7 @@ export default new VueRouter({
             meta: {
                 title: "学员列表",
                 keepAlive:true,
-                tabbarAlive:true
+                tabbarAlive:false
             }
         },
         {
@@ -76,7 +76,7 @@ export default new VueRouter({
             meta: {
                 title: "教师排名",
                 keepAlive:true,
-                tabbarAlive:true
+                tabbarAlive:false
             }
         },
         {
@@ -85,7 +85,7 @@ export default new VueRouter({
             meta: {
                 title: "课时费",
                 keepAlive:true,
-                tabbarAlive:true
+                tabbarAlive:false
             }
         },
         {

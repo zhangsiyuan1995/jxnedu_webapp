@@ -43,7 +43,14 @@ export default {
   name: "personalInfo",
   data() {
     return {
-      headImg: require("../assets/img/head.png")
+      headImg: require("../assets/img/head.png"),
+       personalInfo: {
+        name: "梁苏萌",
+        sex: "女",
+        school: "河北师大",
+        phone: "13088888888",
+      }
+
     };
   }
 };

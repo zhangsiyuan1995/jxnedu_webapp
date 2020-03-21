@@ -10,14 +10,9 @@
     <van-cell title="联系方式" value="1300000000" :style="{margin:'5px 0 0 0'}" />
     <van-cell title="报名日期" value="2010-1-1" />
 
-    <van-row type="flex" justify="center">
+    <van-row class="rpB" type="flex" justify="center">
       <van-col span="22">
-        <van-button
-          type="primary"
-          size="large"
-          color="#209aff"
-          :style="{margin:'20px 0 0 0'}"
-        >退出登录</van-button>
+        <van-button type="primary" size="large" color="#209aff">退出登录</van-button>
       </van-col>
     </van-row>
   </div>

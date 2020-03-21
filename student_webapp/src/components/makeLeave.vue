@@ -1,6 +1,6 @@
 <template>
   <div id="partTime">
-    <van-cell class="ptCell" title="已请假次数" value="2" />
+    <van-cell class="ptCell" title="已请假次数" :value="remTimes" />
     <van-cell title="请假时间" :value="date" @click="show = true" />
     <van-calendar v-model="show" type="range" @confirm="onConfirm" />
     <!-- <van-cell class="ptCell" title="助教姓名" :value="ptN" @click="showPopup3" /> -->
@@ -41,7 +41,8 @@ export default {
   name: "partTime",
   data() {
     return {
-      value: "",
+      remTimes: "2",
+      
       message: "",
       date: "",
       show: false

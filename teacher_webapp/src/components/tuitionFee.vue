@@ -1,5 +1,5 @@
 <template>
-  <div id="personal">
+  <div id="tuitionFee">
     <van-row>
       <van-col span="22" offset="1">
         <van-row class="van-hairline--bottom" type="flex" justify="space-between">
@@ -7,7 +7,7 @@
             <div class="feeBlue">
               <p>收入(元)</p>
               <img src="../assets/img/chart.png" alt />
-              <h2>+598</h2>
+              <h2>+{{income}}</h2>
               <p>本月费用</p>
             </div>
           </van-col>
@@ -15,12 +15,12 @@
             <div class="feeRed">
               <p>扣款(元)</p>
               <img src="../assets/img/chart.png" alt />
-              <h2>+598</h2>
+              <h2>-{{deduction}}</h2>
               <p>本月费用</p>
             </div>
           </van-col>
         </van-row>
-        <h3>本月课时费共28项组成</h3>
+        <h3>本月课时费共{{total}}项组成</h3>
         <div class="feeComp">
           <h2>课时费组成</h2>
           <van-cell v-for="(item,index) in feeComp" :key="index" :value="item.money">
@@ -57,8 +57,9 @@ export default {
     return {
       imgOut: require("../assets/img/feeOut.png"),
       imgIn: require("../assets/img/feeIn.png"),
-      income: "",
-      deduction: "",
+      income: "589",
+      deduction: "941",
+      total:"28",
       feeComp: [
         {
           classN: "19寒假点睛班",

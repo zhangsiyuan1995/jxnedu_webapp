@@ -6,19 +6,19 @@
         <van-row class="threeGift" type="flex" justify="space-around">
           <van-col>
             <router-link to="/giftPoint">
-              <img src="../assets/img/myPoint.png" alt="">
+              <img src="../assets/img/myPoint.png" alt />
               <p>积分:{{point}}</p>
             </router-link>
           </van-col>
           <van-col>
             <router-link to="/gifthistory">
-             <img src="../assets/img/giftHistory.png" alt="">
+              <img src="../assets/img/giftHistory.png" alt />
               <p>兑换记录</p>
             </router-link>
           </van-col>
           <van-col>
             <router-link to="/giftRules">
-              <img src="../assets/img/giftRules.png" alt="">
+              <img src="../assets/img/giftRules.png" alt />
               <p>积分规则</p>
             </router-link>
           </van-col>
@@ -69,56 +69,56 @@ export default {
   name: "gift",
   data() {
     return {
-      point:"2000",
+      point: "2000",
       giftList: [
         {
           giftImg: require("../assets/img/gift.png"),
-          giftName:"礼物名称",
-          giftSum:"500",
-          giftNum:"222",
-          giftPoint:"666",
-          giftId:"123"
+          giftName: "礼物名称",
+          giftSum: "500",
+          giftNum: "222",
+          giftPoint: "666",
+          giftId: "123"
         },
-             {
+        {
           giftImg: require("../assets/img/gift.png"),
-          giftName:"礼物名称",
-          giftSum:"500",
-          giftNum:"222",
-          giftPoint:"666",
-          giftId:"123"
+          giftName: "礼物名称",
+          giftSum: "500",
+          giftNum: "222",
+          giftPoint: "666",
+          giftId: "123"
         },
-             {
+        {
           giftImg: require("../assets/img/gift.png"),
-          giftName:"礼物名称",
-          giftSum:"500",
-          giftNum:"222",
-          giftPoint:"666",
-          giftId:"123"
+          giftName: "礼物名称",
+          giftSum: "500",
+          giftNum: "222",
+          giftPoint: "666",
+          giftId: "123"
         },
-             {
+        {
           giftImg: require("../assets/img/gift.png"),
-          giftName:"礼物名称",
-          giftSum:"500",
-          giftNum:"222",
-          giftPoint:"666",
-          giftId:"123"
+          giftName: "礼物名称",
+          giftSum: "500",
+          giftNum: "222",
+          giftPoint: "666",
+          giftId: "123"
         },
-             {
+        {
           giftImg: require("../assets/img/gift.png"),
-          giftName:"礼物名称",
-          giftSum:"500",
-          giftNum:"222",
-          giftPoint:"666",
-          giftId:"123"
+          giftName: "礼物名称",
+          giftSum: "500",
+          giftNum: "222",
+          giftPoint: "666",
+          giftId: "123"
         },
-             {
+        {
           giftImg: require("../assets/img/gift.png"),
-          giftName:"礼物名称",
-          giftSum:"500",
-          giftNum:"222",
-          giftPoint:"666",
-          giftId:"123"
-        },
+          giftName: "礼物名称",
+          giftSum: "500",
+          giftNum: "222",
+          giftPoint: "666",
+          giftId: "123"
+        }
       ]
     };
   }
@@ -146,7 +146,6 @@ export default {
 }
 .giftBlock {
   padding-bottom: 15px;
-
 }
 .giftBlock img {
   width: 100%;
@@ -159,7 +158,7 @@ export default {
   float: right;
   color: red;
   background-color: rgb(253, 222, 222);
-  border:none
+  border: none;
 }
 .giftBlock .redRound {
   font-size: 11px;
@@ -192,7 +191,7 @@ export default {
 .giftBlock2 h3 {
   margin-top: 5px;
 }
-.threeGift img{
+.threeGift img {
   width: 50px;
 }
 </style>

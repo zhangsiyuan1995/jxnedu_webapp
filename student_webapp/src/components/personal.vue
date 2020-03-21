@@ -10,8 +10,8 @@
         </div>
         <div class="perCho">
           <div class="perNa">
-            <h4>Mei qi</h4>
-            <p>1316228787</p>
+            <h4>{{name}}</h4>
+            <p>{{phone}}</p>
           </div>
           <van-row class="threeB" type="flex" justify="space-around">
             <van-col>
@@ -78,7 +78,15 @@ Vue.use(Row)
   .use(Divider)
   .use(CellGroup);
 export default {
-  name: "personal"
+  name: "personal",
+  data(){
+    return{
+      id:"28",
+      phone:"13700000000",
+      name:"王雅倩",
+      eva:"2"
+    }
+  }
 };
 </script>
 

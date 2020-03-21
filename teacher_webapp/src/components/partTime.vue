@@ -62,7 +62,11 @@ export default {
   data() {
     return {
       value: "",
+      classT: "请选择",
+      classN: "请选择",
+      ptN: "请选择",
       message: "",
+      
       show0: false,
       show1: false,
       show2: false,
@@ -71,9 +75,6 @@ export default {
       currentDate: new Date(),
       time: "",
       time1: "",
-      classT: "请选择",
-      classN: "请选择",
-      ptN: "请选择",
       columns: ["英语一班", "英语一班", "英语一班", "英语一班", "英语一班"],
       columns1: ["王雅倩", "王雅倩", "王雅倩", "王雅倩", "王雅倩"]
     };

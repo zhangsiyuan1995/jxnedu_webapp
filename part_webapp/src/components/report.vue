@@ -55,6 +55,7 @@ export default {
         { key: false, text: "未完成" }
       ],
       parms: {
+        id:"",
         complate: "",
         note: ""
       }
